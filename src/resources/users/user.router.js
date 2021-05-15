@@ -3,7 +3,7 @@ const User = require('./user.model');
 const usersService = require('./user.service');
 
 router.route('/').get(async (req, res) => {
-  console.log("Hello getAll");		
+  //console.log("Hello getAll");		
   const users = await usersService.getAll();
   // map user fields to exclude secret fields like "password"
   res.json(users.map(User.toResponse));
@@ -13,7 +13,7 @@ router.route('/').get(async (req, res) => {
 
 router.route('/').post(async (req, res) => {
   // console.log("Hello users ", req.body.name, ' ',req.body.login, ' ',req.body.password );	
-  console.log('post id ',req.body);
+  //console.log('post id ',req.body);
   const data = {
   	name: req.body.name,
   	login: req.body.login,
@@ -38,9 +38,16 @@ router.route('/:id').get(async (req,res)=>{
 
 
 router.route('/:id').delete(async (req, res) => {
-	console.log('delete user ',req.params.id );
+	//console.log('delete user ',req.params.id );
 	await usersService.del(req.params.id);
 	res.sendStatus(204);
+});
+
+router.route('/:id').put(async (req, res) => {
+	console.log('Update ', req.body);
+	const {name, login, password, id} = req.body;
+	let user = await usersService.update(req.body); 
+	res.status(200).send(User.toResponse(user));
 });
 
 module.exports = router;

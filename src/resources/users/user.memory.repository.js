@@ -26,7 +26,7 @@ const getByID = async (id) => {
 }
 
 const del = async (id) => {
-	console.log('del id ', id);
+	//console.log('del id ', id);
 	usersDB = usersDB.filter((elem)=>{
 		if(elem.id !== id) return true
 			else return false;
@@ -35,4 +35,17 @@ const del = async (id) => {
 
 }
 
-module.exports = { getAll, create, getByID, del};
+const update = async (updateData) => {
+	let updatedUser = {};
+	usersDB.map((item)=>{
+		if(item.id == updateData.id) {
+			item.name = updateData.name;
+			item.login = updateData.login;
+			item.password = updateData.password;
+			updatedUser = item;
+		}
+	});
+	return updatedUser;
+}
+
+module.exports = { getAll, create, getByID, del, update};
