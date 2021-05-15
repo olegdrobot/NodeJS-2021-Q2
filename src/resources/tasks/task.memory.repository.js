@@ -1,10 +1,10 @@
 const Task = require('./task.model');
 
-const DB = require('../database/db');
+//const DB = require('../database/db');
 
-// let tasksDB =[];
+let tasksDB =[];
 
-let tasksDB = DB.tasksDB; 
+//let tasksDB = DB.tasksDB; 
 
 const getAll = async () => tasksDB;
 
@@ -46,5 +46,18 @@ const del = async (boardId, taskId) => {
 	console.log("After delete ", tasksDB);
 };
 
+const delBoardsTask = async (id) => {
+	tasksDB = tasksDB.filter((el)=>{
+		if(el.boardId !== id) return true
+			else return false;
+	});
+}
 
-module.exports = { getAll, create, getByID, update, del };
+const delTaskUser = async (id) => {
+	tasksDB.map((item)=>{
+		if(item.userId == id) item.userId = null;
+	});
+}
+
+
+module.exports = { getAll, create, getByID, update, del, delBoardsTask, delTaskUser };

@@ -1,10 +1,12 @@
 const Board = require('./board.model');
+const tasksRepo = require('../tasks/task.memory.repository');
 
-const DB = require('../database/db');
+//const DB = require('../database/db');
 
-let boardsDB = DB.boardsDB; 
+//let boardsDB = DB.boardsDB; 
+//let tasksDB = DB.tasksDB;
 
-//let boardsDB =[];
+let boardsDB =[];
 
 const getAll = async () => boardsDB;
 
@@ -39,8 +41,14 @@ const del = async (id) => {
 		if(elem.id !== id) return true
 			else return false;
 	});
-	
-	//console.log("After delete ", boardsDB);
+	await tasksRepo.delBoardsTask(id);
+	/*
+	tasksDB = tasksDB.filter((item)=>{
+		if(item.boardId !== id) return true
+			else return false;
+	})
+	console.log("tasksDB (board) ", tasksDB, 'boardId ', id);
+	*/
 }
 
 

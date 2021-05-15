@@ -1,10 +1,11 @@
 const User = require('./user.model');
+const tasksRepo = require('../tasks/task.memory.repository');
 
-const DB = require('../database/db');
+//const DB = require('../database/db');
 
-let usersDB = DB.usersDB; 
+//let usersDB = DB.usersDB; 
 
-//let usersDB =[];
+let usersDB =[];
 
 const getAll = async () => 
 	// TODO: mock implementation. should be replaced during task development
@@ -35,6 +36,8 @@ const del = async (id) => {
 		if(elem.id !== id) return true
 			else return false;
 	});
+
+	await tasksRepo.delTaskUser(id);
 	console.log("After delete ", usersDB);
 
 }
