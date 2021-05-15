@@ -30,16 +30,17 @@ router.route('/').post(async (req, res) => {
 
 
 router.route('/:id').get(async (req,res)=>{
-	console.log('find user ',req.params.id );
-  /*const data = {
-  	id: req.params.id,
-  	name: req.params.name,
-  	login: req.params.login,
-  	password: req.params.password
-  }*/
+	//console.log('find user ',req.params.id );
 	let user = await usersService.getByID(req.params.id);
-	//let user = new User(data);
 	res.status(200).send(User.toResponse(user)); 
+});
+
+
+
+router.route('/:id').delete(async (req, res) => {
+	console.log('delete user ',req.params.id );
+	await usersService.del(req.params.id);
+	res.sendStatus(204);
 });
 
 module.exports = router;
