@@ -3,9 +3,43 @@ const User = require('./user.model');
 const usersService = require('./user.service');
 
 router.route('/').get(async (req, res) => {
+  console.log("Hello getAll");		
   const users = await usersService.getAll();
   // map user fields to exclude secret fields like "password"
   res.json(users.map(User.toResponse));
+});
+
+
+
+router.route('/').post(async (req, res) => {
+  // console.log("Hello users ", req.body.name, ' ',req.body.login, ' ',req.body.password );	
+  console.log('post id ',req.body);
+  const data = {
+  	name: req.body.name,
+  	login: req.body.login,
+  	password: req.body.password
+  }
+  //let user = new User(data);	
+
+  const user = await usersService.create(data);
+  // map user fields to exclude secret fields like "password"
+  //console.log('user.router ', user);
+  //res.status(201).send(users.map((el)=>JSON.stringify(el.toResponse)));
+  res.status(201).send(User.toResponse(user)); 	
+});
+
+
+router.route('/:id').get(async (req,res)=>{
+	console.log('find user ',req.params.id );
+  /*const data = {
+  	id: req.params.id,
+  	name: req.params.name,
+  	login: req.params.login,
+  	password: req.params.password
+  }*/
+	let user = await usersService.getByID(req.params.id);
+	//let user = new User(data);
+	res.status(200).send(User.toResponse(user)); 
 });
 
 module.exports = router;
