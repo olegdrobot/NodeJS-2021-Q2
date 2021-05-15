@@ -44,7 +44,7 @@ router.route('/:id').delete(async (req, res) => {
 });
 
 router.route('/:id').put(async (req, res) => {
-	console.log('Update ', req.body);
+	//console.log('Update ', req.body);
 	const {name, login, password, id} = req.body;
 	let user = await usersService.update(req.body); 
 	res.status(200).send(User.toResponse(user));

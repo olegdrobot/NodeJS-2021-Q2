@@ -1,6 +1,10 @@
 const User = require('./user.model');
 
-let usersDB =[];
+const DB = require('../database/db');
+
+let usersDB = DB.usersDB; 
+
+//let usersDB =[];
 
 const getAll = async () => 
 	// TODO: mock implementation. should be replaced during task development
