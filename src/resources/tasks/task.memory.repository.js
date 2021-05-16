@@ -1,32 +1,25 @@
 const Task = require('./task.model');
 
-//const DB = require('../database/db');
-
 let tasksDB =[];
-
-//let tasksDB = DB.tasksDB; 
 
 const getAll = async () => tasksDB;
 
 const create = async (data) => {
 	const newTask = new Task (data);
-	//console.log("User.repo Create ", newUser, ' ', usersDB);
 	tasksDB.push(newTask);
-	console.log("User.repo Create After ", tasksDB);
 	
 	return newTask;  
 }
 
 const getByID = async (boardId, taskId) => {
-	let task = tasksDB.filter((el)=>{return (el.boardId == boardId && el.id == taskId)});
-	//console.log('TASK getByID AFTER', user);
+	const task = tasksDB.filter((el)=>(el.boardId === boardId && el.id === taskId));
 	return task[0];
 }
 
 const update = async (boardId, taskId, data) => {
 	let updatedTask = {};
 	tasksDB.map((item) => {
-		if(item.boardId == boardId && item.id == taskId ) {
+		if(item.boardId === boardId && item.id === taskId ) {
 			item.title = data.title;
 			item.order = data.order;
 			item.description = data.description;
@@ -41,21 +34,20 @@ const update = async (boardId, taskId, data) => {
 const del = async (boardId, taskId) => {
 	tasksDB = tasksDB.filter((el)=>{
 		if(el.boardId !== boardId || el.id !== taskId) return true
-			else return false;
+			return false;
 	});
-	console.log("After delete ", tasksDB);
 };
 
 const delBoardsTask = async (id) => {
 	tasksDB = tasksDB.filter((el)=>{
 		if(el.boardId !== id) return true
-			else return false;
+			return false;
 	});
 }
 
 const delTaskUser = async (id) => {
 	tasksDB.map((item)=>{
-		if(item.userId == id) item.userId = null;
+		if(item.userId === id) item.userId = null;
 	});
 }
 
