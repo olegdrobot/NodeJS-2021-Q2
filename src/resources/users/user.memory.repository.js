@@ -24,19 +24,20 @@ const del = async (id) => {
 	});
 
 	await tasksRepo.delTaskUser(id);
-
+    
 }
 
 const update = async (updateData) => {
 	let updatedUser = {};
-	usersDB.map((item)=>{
-		if(item.id === updateData.id) {
-			item.name = updateData.name;
-			item.login = updateData.login;
-			item.password = updateData.password;
-			updatedUser = item;
+	for(let i=0; i<usersDB.length; i+=1){
+		if(usersDB[i].id === updateData.id) {
+			usersDB[i].name = updateData.name;
+			usersDB[i].login = updateData.login;
+			usersDB[i].password = updateData.password;
+			updatedUser = usersDB[i];
 		}
-	});
+	}
+
 	return updatedUser;
 }
 

@@ -1,16 +1,6 @@
 const { v4: uuidv4 } = require('uuid');
 
-class Column {
-  constructor({
-    id = uuidv4(),
-    title = 'string',
-    order = 0
-  } = {}) {
-    this.id = id;
-    this.title = title;
-    this.order = order;
-  }
-};
+const Column = require('../columns/column.model');
 
 class Board {
   constructor({
@@ -24,7 +14,7 @@ class Board {
   }
 
   addColumn(arr){
-    for(let i=0; i<arr.length; i++){
+    for(let i=0; i<arr.length; i+=1){
       this.columns.push(new Column(arr[i]));  
     }
     

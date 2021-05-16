@@ -18,16 +18,17 @@ const getByID = async (boardId, taskId) => {
 
 const update = async (boardId, taskId, data) => {
 	let updatedTask = {};
-	tasksDB.map((item) => {
-		if(item.boardId === boardId && item.id === taskId ) {
-			item.title = data.title;
-			item.order = data.order;
-			item.description = data.description;
-			item.userId = data.userId;
-			item.columnId = data.columnId;
-			updatedTask = item;
+	for(let i=0; i<tasksDB.length; i+=1){
+		if(tasksDB[i].boardId === boardId && tasksDB[i].id === taskId ) {
+			tasksDB[i].title = data.title;
+			tasksDB[i].order = data.order;
+			tasksDB[i].description = data.description;
+			tasksDB[i].userId = data.userId;
+			tasksDB[i].columnId = data.columnId;
+			updatedTask = tasksDB[i];
 		}
-	});
+	}
+
 	return updatedTask;
 }
 
@@ -46,9 +47,10 @@ const delBoardsTask = async (id) => {
 }
 
 const delTaskUser = async (id) => {
-	tasksDB.map((item)=>{
-		if(item.userId === id) item.userId = null;
-	});
+	for(let i=0; i<tasksDB.length; i+=1){
+		if(tasksDB[i].userId === id) tasksDB[i].userId = null;
+	}
+
 }
 
 

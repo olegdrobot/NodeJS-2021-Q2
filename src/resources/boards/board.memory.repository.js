@@ -19,12 +19,13 @@ const getByID = async (id) => {
 
 const update = async (data) => {
 	let updatedBoard = {};
-	boardsDB.map((item)=>{
-		if(item.id === data.id){
-			item.title = data.title;
-			updatedBoard = item;
+	for(let i=0; i<boardsDB.length; i+=1){
+		if(boardsDB[i].id === data.id){
+			boardsDB[i].title = data.title;
+			updatedBoard = boardsDB[i];
 		}
-	});
+	}
+
 	return updatedBoard;
 }
 
