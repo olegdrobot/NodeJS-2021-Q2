@@ -20,7 +20,8 @@
     "eslint:recommended",
     "plugin:node/recommended",
     "airbnb-base",
-    "prettier"
+    "prettier",
+    "google"
   ],
   "rules": {
     "import/extensions": "off",
