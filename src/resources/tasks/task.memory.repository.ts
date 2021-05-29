@@ -1,6 +1,7 @@
-const Task = require('./task.model');
+import Task from './task.model';
 
-let tasksDB =[];
+
+let tasksDB: any[] = [];
 
 /**
  * This function return all Tasks from the database
@@ -15,7 +16,7 @@ const getAll = async () => tasksDB;
  * @return (object) newTask - It's Task which will be created and add to the database
 */
 
-const create = async (data) => {
+const create = async (data: Task) => {
 	const newTask = new Task (data);
 	tasksDB.push(newTask);
 	
@@ -29,7 +30,7 @@ const create = async (data) => {
  * @return (object) task[0]
 */
 
-const getByID = async (boardId, taskId) => {
+const getByID = async (boardId: string, taskId: string) => {
 	const task = tasksDB.filter((el)=>(el.boardId === boardId && el.id === taskId));
 	return task[0];
 }
@@ -42,7 +43,7 @@ const getByID = async (boardId, taskId) => {
  * @return (object) updatedTask - It's updated Task
 */ 
 
-const update = async (boardId, taskId, data) => {
+const update = async (boardId: string, taskId: string, data: Task) => {
 	let updatedTask = {};
 	for(let i=0; i<tasksDB.length; i+=1){
 		if(tasksDB[i].boardId === boardId && tasksDB[i].id === taskId ) {
@@ -66,7 +67,7 @@ const update = async (boardId, taskId, data) => {
  * @return (boolean) false - If Task was found
 */
 
-const del = async (boardId, taskId) => {
+const del = async (boardId: string, taskId: string) => {
 	tasksDB = tasksDB.filter((el)=>{
 		if(el.boardId !== boardId || el.id !== taskId) return true
 			return false;
@@ -78,7 +79,7 @@ const del = async (boardId, taskId) => {
  * @param (string) id - ID deleted Board
 */
 
-const delBoardsTask = async (id) => {
+const delBoardsTask = async (id: string) => {
 	tasksDB = tasksDB.filter((el)=>{
 		if(el.boardId !== id) return true
 			return false;
@@ -90,12 +91,23 @@ const delBoardsTask = async (id) => {
  * @param (string) id - It's ID of user which was deleted
 */
 
-const delTaskUser = async (id) => {
+const delTaskUser = async (id: string) => {
 	for(let i=0; i<tasksDB.length; i+=1){
 		if(tasksDB[i].userId === id) tasksDB[i].userId = null;
 	}
 
 }
 
-
+/*
 module.exports = { getAll, create, getByID, update, del, delBoardsTask, delTaskUser };
+*/
+
+export {
+	getAll, 
+	create, 
+	getByID, 
+	update, 
+	del, 
+	delBoardsTask, 
+	delTaskUser,
+};
