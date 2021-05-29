@@ -1,7 +1,7 @@
-const User = require('./user.model');
-const tasksRepo = require('../tasks/task.memory.repository');
+import User from './user.model';
+import * as tasksRepo from '../tasks/task.memory.repository';
 
-let usersDB =[];
+let usersDB: any[] = [];
 
 /**
  * This function return all Users from the database
@@ -18,7 +18,7 @@ const getAll = async () => usersDB;
 
 const create = async (data) => {
 	
-	const newUser = new User (data);
+	const newUser: User = new User (data);
 	usersDB.push(newUser);	
 	return newUser;  
 };
@@ -29,7 +29,7 @@ const create = async (data) => {
  * @return (object) user[0]
 */
 
-const getByID = async (id) => {
+const getByID = async (id: string) => {
 	const user = usersDB.filter((el)=>el.id === id);
 	return user[0];
 }
@@ -40,7 +40,7 @@ const getByID = async (id) => {
  * @return (boolean) false - If User was found
 */
 
-const del = async (id) => {
+const del = async (id: string) => {
 	usersDB = usersDB.filter((elem)=>{
 		if(elem.id !== id) return true
 			return false;
@@ -56,7 +56,7 @@ const del = async (id) => {
  * @return (object) updatedUser - It's updated User
 */
 
-const update = async (updateData) => {
+const update = async (updateData: User) => {
 	let updatedUser = {};
 	for(let i=0; i<usersDB.length; i+=1){
 		if(usersDB[i].id === updateData.id) {
@@ -70,4 +70,11 @@ const update = async (updateData) => {
 	return updatedUser;
 }
 
-module.exports = { getAll, create, getByID, del, update};
+
+export { 
+	getAll, 
+	create, 
+	getByID, 
+	del, 
+	update
+};

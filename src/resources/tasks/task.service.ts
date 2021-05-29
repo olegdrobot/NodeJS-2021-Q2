@@ -1,6 +1,5 @@
 import * as tasksRepo from './task.memory.repository';
 import Task from './task.model';
-//const tasksRepo = require('./task.memory.repository');
 
 const getAll = () => tasksRepo.getAll();
 
