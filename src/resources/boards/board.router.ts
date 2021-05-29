@@ -1,6 +1,14 @@
+/*
 const router = require('express').Router();
 const Board = require('./board.model');
 const boardsService = require('./board.service');
+*/
+
+import * as express from 'express';
+import Board from './board.model';
+import * as boardsService from './board.service';
+
+const router = express.Router();
 
 router.route('/').get(async (req, res) => {
      
@@ -30,4 +38,6 @@ router.route('/:id').delete(async (req, res) => {
   res.sendStatus(200);
 });
 
-module.exports = router;
+//module.exports = router;
+
+export default router;

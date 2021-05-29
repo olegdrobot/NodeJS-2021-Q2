@@ -1,6 +1,10 @@
-const { v4: uuidv4 } = require('uuid');
+//const { v4: uuidv4 } = require('uuid');
+//const Column = require('../columns/column.model');
 
-const Column = require('../columns/column.model');
+import { uuidv4 } from 'uuid';
+import Column from '../columns/column.model';
+
+
 
 /** Class representing a Board */
 
@@ -12,6 +16,10 @@ class Board {
    * @param (string) title - The title of the Board
    * @param (array) columns - The Boards columns 
   */
+
+  id: string;
+  title: string;
+  columns: any[];
   
   constructor({
     id = uuidv4(),
@@ -47,4 +55,5 @@ class Board {
   } 
 };
 
-module.exports = Board;
+//module.exports = Board;
+export default Board;

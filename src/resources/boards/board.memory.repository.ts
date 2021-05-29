@@ -1,7 +1,12 @@
+import Board from './board.model';
+import * as tasksRepo from '../tasks/task.memory.repository';
+
+/*
 const Board = require('./board.model');
 const tasksRepo = require('../tasks/task.memory.repository');
+*/
 
-let boardsDB =[];
+let boardsDB: any[] =[];
 
 /**
  * This function return all Boards from the database
@@ -16,7 +21,7 @@ const getAll = async () => boardsDB;
  * @return (object) newBoard - It's Board which will be created and add to the database
 */
 
-const create = async (data) => {
+const create = async (data: Board) => {
 	const newBoard = new Board({title: data.title});
 	newBoard.addColumn(data.columns);
 	boardsDB.push(newBoard);
@@ -29,7 +34,7 @@ const create = async (data) => {
  * @return (object) board[0]
 */
 
-const getByID = async (id) => {
+const getByID = async (id: string) => {
 	const board = boardsDB.filter((el)=>el.id === id);
 	return board[0];
 }
@@ -40,7 +45,7 @@ const getByID = async (id) => {
  * @return (object) updatedBoard - It's updated Board
 */
 
-const update = async (data) => {
+const update = async (data: Board) => {
 	let updatedBoard = {};
 	for(let i=0; i<boardsDB.length; i+=1){
 		if(boardsDB[i].id === data.id){
@@ -58,7 +63,7 @@ const update = async (data) => {
  * @return (boolean) false - If Board was found
 */
 
-const del = async (id) => {
+const del = async (id: string) => {
 	
 	boardsDB = boardsDB.filter((elem)=>{
 		if(elem.id !== id) return true
@@ -69,4 +74,11 @@ const del = async (id) => {
 }
 
 
-module.exports = { getAll, create, getByID, update, del };
+//module.exports = { getAll, create, getByID, update, del };
+export { 
+	getAll, 
+	create, 
+	getByID, 
+	update, 
+	del 
+};

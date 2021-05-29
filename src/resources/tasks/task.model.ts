@@ -16,14 +16,15 @@ class Task {
   * @param (string) columnId - ID of column
 */
 
-    id: string;
+    
     title: string;
     order: number;
     description: string;
     userId: string;
     boardId: string;
     columnId: string;
-
+    id?: string;
+    
   constructor({
     id = uuidv4(),
     title = 'string',

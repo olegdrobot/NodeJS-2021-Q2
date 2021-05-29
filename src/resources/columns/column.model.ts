@@ -1,4 +1,6 @@
-const { v4: uuidv4 } = require('uuid');
+import { uuidv4 } from 'uuid';
+
+//const { v4: uuidv4 } = require('uuid');
 
 /** Class representing a Column */
 
@@ -9,6 +11,11 @@ class Column {
 	* @param (string) title - The title of the Column
 	* @param (number) order - The Columns order
 */	
+
+  id: string;
+  title: string;
+  order: number;
+
   constructor({
     id = uuidv4(),
     title = 'string',
@@ -21,4 +28,5 @@ class Column {
 };
 
 
-module.exports = Column;
+// module.exports = Column;
+export default Column;
