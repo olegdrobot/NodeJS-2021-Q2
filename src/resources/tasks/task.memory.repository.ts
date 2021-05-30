@@ -1,7 +1,7 @@
 import Task from './task.model';
 
 
-let tasksDB: any[] = [];
+let tasksDB = new Array();
 
 /**
  * This function return all Tasks from the database

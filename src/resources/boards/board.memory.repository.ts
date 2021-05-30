@@ -1,7 +1,8 @@
 import Board from './board.model';
 import * as tasksRepo from '../tasks/task.memory.repository';
 
-let boardsDB: any[] =[];
+let boardsDB = new Array();
+
 
 /**
  * This function return all Boards from the database

@@ -1,5 +1,12 @@
 import * as uuid from 'uuid';
 
+interface IUser {
+    name: string;
+    login: string;
+    password: string;
+    id?: string;
+}
+
 /** Class representing a User */
 
 class User {
@@ -36,7 +43,7 @@ class User {
     * @return (object) 
   */
 
-  static toResponse(user: any) {
+  static toResponse(user: Partial<IUser>) {
     const { id, name, login } = user;
     return { id, name, login };
   }

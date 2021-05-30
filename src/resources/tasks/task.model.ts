@@ -1,7 +1,16 @@
 import * as uuid from 'uuid';
 
-/** Class representing a Task */
+interface ITask {
+   title: string;
+   order: number;
+   description: string;
+   userId: string | undefined;
+   boardId: string;
+   columnId: string | undefined;
+   id?: string;
+}
 
+/** Class representing a Task */
 
 class Task {
 
@@ -50,7 +59,7 @@ class Task {
     * @return (object) 
   */
 
-  static toResponse(task: any) {
+  static toResponse(task: Partial<ITask>) {
     const { id, title, order, description, userId, boardId, columnId } = task;
     return { id, title, order, description, userId, boardId, columnId };
   }

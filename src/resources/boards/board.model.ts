@@ -1,7 +1,11 @@
 import * as uuid from 'uuid';
 import Column from '../columns/column.model';
 
-
+interface IBoard {
+  id: string;
+  title: string;
+  columns: object[];
+}
 
 /** Class representing a Board */
 
@@ -16,7 +20,7 @@ class Board {
 
   id: string;
   title: string;
-  columns: any[];
+  columns: object[];
   
   constructor({
     id = uuid.v4(),
@@ -33,7 +37,7 @@ class Board {
    * @param (array) arr - Array of columns objects
   */
 
-  addColumn(arr: any[]){
+  addColumn(arr: object[]){
     for(let i=0; i<arr.length; i+=1){
       this.columns.push(new Column(arr[i]));  
     }
@@ -46,8 +50,15 @@ class Board {
     * @return (object) 
   */
 
-  static toResponse(board: any) {
+  static toResponse(board: Partial<IBoard>) {
     const { id, title, columns } = board;
+    /*
+    let obj = {
+      id: String(board['id']),
+      title: String(board.title),
+      columns: board.columns
+    }
+    */
     return { id, title, columns };
   } 
 };

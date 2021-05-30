@@ -1,7 +1,7 @@
 import User from './user.model';
 import * as tasksRepo from '../tasks/task.memory.repository';
 
-let usersDB: any[] = [];
+let usersDB = new Array();
 
 /**
  * This function return all Users from the database
@@ -16,7 +16,7 @@ const getAll = async () => usersDB;
  * @return (object) newUser - It's User which will be created and add to the database
 */
 
-const create = async (data: any) => {
+const create = async (data: User) => {
 	
 	const newUser: User = new User (data);
 	usersDB.push(newUser);	

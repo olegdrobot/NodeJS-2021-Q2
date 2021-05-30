@@ -3,7 +3,7 @@ import Board from './board.model';
 
 const getAll = () => boardRepo.getAll();
 
-const create = (data: any) => boardRepo.create(data);
+const create = (data: Board) => boardRepo.create(data);
 
 const getByID = (id: string) => boardRepo.getByID(id);
 
