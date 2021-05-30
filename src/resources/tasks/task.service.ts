@@ -11,18 +11,18 @@ const update = (boardId: string, taskId: string, data: Task) => tasksRepo.update
 
 const del = (boardId: string, taskId: string) => tasksRepo.del(boardId, taskId);
 
-const delBoardsTask = (id: string) => tasksRepo.delBoardsTask(id); 
+const delBoardsTask = (id: string) => tasksRepo.delBoardsTask(id);
 
-const delTaskUser = (id: string) => tasksRepo.delTaskUser(id); 
+const delTaskUser = (id: string) => tasksRepo.delTaskUser(id);
 
-//module.exports = { getAll, create, getByID, update, del, delBoardsTask, delTaskUser };
+// module.exports = { getAll, create, getByID, update, del, delBoardsTask, delTaskUser };
 
-export { 
-	getAll, 
-	create, 
-	getByID, 
-	update, 
-	del, 
-	delBoardsTask, 
-	delTaskUser 
+export {
+  getAll,
+  create,
+  getByID,
+  update,
+  del,
+  delBoardsTask,
+  delTaskUser,
 };

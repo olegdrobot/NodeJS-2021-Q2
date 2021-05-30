@@ -10,22 +10,23 @@ interface IBoard {
 /** Class representing a Board */
 
 class Board {
-
   /**
    * Create a Board
    * @param (string) id - ID of Board
    * @param (string) title - The title of the Board
-   * @param (array) columns - The Boards columns 
+   * @param (array) columns - The Boards columns
   */
 
   id: string;
+
   title: string;
+
   columns: object[];
-  
+
   constructor({
     id = uuid.v4(),
     title = 'String',
-    columns = []
+    columns = [],
   } = {}) {
     this.id = id;
     this.title = title;
@@ -37,17 +38,16 @@ class Board {
    * @param (array) arr - Array of columns objects
   */
 
-  addColumn(arr: object[]){
-    for(let i=0; i<arr.length; i+=1){
-      this.columns.push(new Column(arr[i]));  
+  addColumn(arr: object[]) {
+    for (let i=0; i<arr.length; i+=1) {
+      this.columns.push(new Column(arr[i]));
     }
-    
   }
 
   /**
     * Return Boadrs object
-    * @param (class) board - Class Boards instance   
-    * @return (object) 
+    * @param (class) board - Class Boards instance
+    * @return (object)
   */
 
   static toResponse(board: Partial<IBoard>) {
@@ -60,8 +60,8 @@ class Board {
     }
     */
     return { id, title, columns };
-  } 
+  }
 };
 
-//module.exports = Board;
+// module.exports = Board;
 export default Board;

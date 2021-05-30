@@ -6,7 +6,7 @@ let boardsDB = new Array();
 
 /**
  * This function return all Boards from the database
- * @return (array) boardsDB - It's array of Boards objects 
+ * @return (array) boardsDB - It's array of Boards objects
 */
 
 const getAll = async () => boardsDB;
@@ -18,22 +18,22 @@ const getAll = async () => boardsDB;
 */
 
 const create = async (data: Board) => {
-	const newBoard = new Board({title: data.title});
-	newBoard.addColumn(data.columns);
-	boardsDB.push(newBoard);
-	return newBoard;
-}
+  const newBoard = new Board({ title: data.title });
+  newBoard.addColumn(data.columns);
+  boardsDB.push(newBoard);
+  return newBoard;
+};
 
 /**
- * This function return 'Board' by id from database 
- * @param (string) id - It's Boards id, which will be returned 
+ * This function return 'Board' by id from database
+ * @param (string) id - It's Boards id, which will be returned
  * @return (object) board[0]
 */
 
 const getByID = async (id: string) => {
-	const board = boardsDB.filter((el)=>el.id === id);
-	return board[0];
-}
+  const board = boardsDB.filter((el)=>el.id === id);
+  return board[0];
+};
 
 /**
  * This function is update board data in the database
@@ -42,39 +42,37 @@ const getByID = async (id: string) => {
 */
 
 const update = async (data: Board) => {
-	let updatedBoard = {};
-	for(let i=0; i<boardsDB.length; i+=1){
-		if(boardsDB[i].id === data.id){
-			boardsDB[i].title = data.title;
-			updatedBoard = boardsDB[i];
-		}
-	}
+  let updatedBoard = {};
+  for (let i=0; i<boardsDB.length; i+=1) {
+    if (boardsDB[i].id === data.id) {
+      boardsDB[i].title = data.title;
+      updatedBoard = boardsDB[i];
+    }
+  }
 
-	return updatedBoard;
-}
+  return updatedBoard;
+};
 
 /**
  * This function delete board from the database
- * @param (string) id - It's Boards id, which will be deleted from database 
+ * @param (string) id - It's Boards id, which will be deleted from database
  * @return (boolean) false - If Board was found
 */
 
 const del = async (id: string) => {
-	
-	boardsDB = boardsDB.filter((elem)=>{
-		if(elem.id !== id) return true
-			return false;
-	});
-	await tasksRepo.delBoardsTask(id);
-	
-}
+  boardsDB = boardsDB.filter((elem)=>{
+    if (elem.id !== id) return true;
+    return false;
+  });
+  await tasksRepo.delBoardsTask(id);
+};
 
 
-//module.exports = { getAll, create, getByID, update, del };
-export { 
-	getAll, 
-	create, 
-	getByID, 
-	update, 
-	del 
+// module.exports = { getAll, create, getByID, update, del };
+export {
+  getAll,
+  create,
+  getByID,
+  update,
+  del,
 };

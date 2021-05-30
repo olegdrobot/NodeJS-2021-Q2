@@ -5,7 +5,7 @@ let tasksDB = new Array();
 
 /**
  * This function return all Tasks from the database
- * @return (array) tasksDB - It's array of Tasks objects 
+ * @return (array) tasksDB - It's array of Tasks objects
 */
 
 const getAll = async () => tasksDB;
@@ -17,23 +17,23 @@ const getAll = async () => tasksDB;
 */
 
 const create = async (data: Task) => {
-	const newTask = new Task(data);
-	tasksDB.push(newTask);
-	//console.log(tasksDB);
-	return newTask;  
-}
+  const newTask = new Task(data);
+  tasksDB.push(newTask);
+  // console.log(tasksDB);
+  return newTask;
+};
 
 /**
  * This function return 'Task' of the Board  from database using Tasks ID and Board ID
  * @param (string) boardId - It's Boards id, which contain the Task
- * @param (string) taskId - It's Tasks id, which will be returned 
+ * @param (string) taskId - It's Tasks id, which will be returned
  * @return (object) task[0]
 */
 
 const getByID = async (boardId: string, taskId: string) => {
-	const task = tasksDB.filter((el)=>(el.boardId === boardId && el.id === taskId));
-	return task[0];
-}
+  const task = tasksDB.filter((el)=>(el.boardId === boardId && el.id === taskId));
+  return task[0];
+};
 
 /**
  * This function is update Tasks data of the Board in the database using Tasks ID and Board ID
@@ -41,23 +41,23 @@ const getByID = async (boardId: string, taskId: string) => {
  * @param (string) taskId - It's Tasks id, which will be updated
  * @param (string) boardId - It's Boards id, which contain the Task
  * @return (object) updatedTask - It's updated Task
-*/ 
+*/
 
 const update = async (boardId: string, taskId: string, data: Task) => {
-	let updatedTask = {};
-	for(let i=0; i<tasksDB.length; i+=1){
-		if(tasksDB[i].boardId === boardId && tasksDB[i].id === taskId ) {
-			tasksDB[i].title = data.title;
-			tasksDB[i].order = data.order;
-			tasksDB[i].description = data.description;
-			tasksDB[i].userId = data.userId;
-			tasksDB[i].columnId = data.columnId;
-			updatedTask = tasksDB[i];
-		}
-	}
+  let updatedTask = {};
+  for (let i=0; i<tasksDB.length; i+=1) {
+    if (tasksDB[i].boardId === boardId && tasksDB[i].id === taskId ) {
+      tasksDB[i].title = data.title;
+      tasksDB[i].order = data.order;
+      tasksDB[i].description = data.description;
+      tasksDB[i].userId = data.userId;
+      tasksDB[i].columnId = data.columnId;
+      updatedTask = tasksDB[i];
+    }
+  }
 
-	return updatedTask;
-}
+  return updatedTask;
+};
 
 /**
  * This function is delete Task of the Board from the database using Tasks ID and Board ID
@@ -68,10 +68,10 @@ const update = async (boardId: string, taskId: string, data: Task) => {
 */
 
 const del = async (boardId: string, taskId: string) => {
-	tasksDB = tasksDB.filter((el)=>{
-		if(el.boardId !== boardId || el.id !== taskId) return true
-			return false;
-	});
+  tasksDB = tasksDB.filter((el)=>{
+    if (el.boardId !== boardId || el.id !== taskId) return true;
+    return false;
+  });
 };
 
 /**
@@ -80,11 +80,11 @@ const del = async (boardId: string, taskId: string) => {
 */
 
 const delBoardsTask = async (id: string) => {
-	tasksDB = tasksDB.filter((el)=>{
-		if(el.boardId !== id) return true
-			return false;
-	});
-}
+  tasksDB = tasksDB.filter((el)=>{
+    if (el.boardId !== id) return true;
+    return false;
+  });
+};
 
 /**
  * This function assign 'null' to the users ID of Tasks
@@ -92,22 +92,21 @@ const delBoardsTask = async (id: string) => {
 */
 
 const delTaskUser = async (id: string) => {
-	for(let i=0; i<tasksDB.length; i+=1){
-		if(tasksDB[i].userId === id) tasksDB[i].userId = null;
-	}
-
-}
+  for (let i=0; i<tasksDB.length; i+=1) {
+    if (tasksDB[i].userId === id) tasksDB[i].userId = null;
+  }
+};
 
 /*
 module.exports = { getAll, create, getByID, update, del, delBoardsTask, delTaskUser };
 */
 
 export {
-	getAll, 
-	create, 
-	getByID, 
-	update, 
-	del, 
-	delBoardsTask, 
-	delTaskUser,
+  getAll,
+  create,
+  getByID,
+  update,
+  del,
+  delBoardsTask,
+  delTaskUser,
 };

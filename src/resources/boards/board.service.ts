@@ -11,12 +11,12 @@ const update = (data: Board) => boardRepo.update(data);
 
 const del = (id: string) => boardRepo.del(id);
 
-//module.exports = { getAll, create, getByID, update, del };
+// module.exports = { getAll, create, getByID, update, del };
 
-export { 
-	getAll, 
-	create, 
-	getByID, 
-	update, 
-	del 
+export {
+  getAll,
+  create,
+  getByID,
+  update,
+  del,
 };

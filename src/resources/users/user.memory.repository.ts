@@ -5,7 +5,7 @@ let usersDB = new Array();
 
 /**
  * This function return all Users from the database
- * @return (array) usersDB - It's array of Users objects 
+ * @return (array) usersDB - It's array of Users objects
 */
 
 const getAll = async () => usersDB;
@@ -17,38 +17,36 @@ const getAll = async () => usersDB;
 */
 
 const create = async (data: User) => {
-	
-	const newUser: User = new User (data);
-	usersDB.push(newUser);	
-	return newUser;  
+  const newUser: User = new User(data);
+  usersDB.push(newUser);
+  return newUser;
 };
 
 /**
- * This function return 'User' by id from database 
- * @param (string) id - It's Users id, which will be returned 
+ * This function return 'User' by id from database
+ * @param (string) id - It's Users id, which will be returned
  * @return (object) user[0]
 */
 
 const getByID = async (id: string) => {
-	const user = usersDB.filter((el)=>el.id === id);
-	return user[0];
-}
+  const user = usersDB.filter((el)=>el.id === id);
+  return user[0];
+};
 
 /**
  * This function delete user from the database
- * @param (string) id - It's Users id, which will be deleted from database 
+ * @param (string) id - It's Users id, which will be deleted from database
  * @return (boolean) false - If User was found
 */
 
 const del = async (id: string) => {
-	usersDB = usersDB.filter((elem)=>{
-		if(elem.id !== id) return true
-			return false;
-	});
+  usersDB = usersDB.filter((elem)=>{
+    if (elem.id !== id) return true;
+    return false;
+  });
 
-	await tasksRepo.delTaskUser(id);
-    
-}
+  await tasksRepo.delTaskUser(id);
+};
 
 /**
  * This function is update users data in the database
@@ -57,24 +55,24 @@ const del = async (id: string) => {
 */
 
 const update = async (updateData: User) => {
-	let updatedUser = {};
-	for(let i=0; i<usersDB.length; i+=1){
-		if(usersDB[i].id === updateData.id) {
-			usersDB[i].name = updateData.name;
-			usersDB[i].login = updateData.login;
-			usersDB[i].password = updateData.password;
-			updatedUser = usersDB[i];
-		}
-	}
+  let updatedUser = {};
+  for (let i=0; i<usersDB.length; i+=1) {
+    if (usersDB[i].id === updateData.id) {
+      usersDB[i].name = updateData.name;
+      usersDB[i].login = updateData.login;
+      usersDB[i].password = updateData.password;
+      updatedUser = usersDB[i];
+    }
+  }
 
-	return updatedUser;
-}
+  return updatedUser;
+};
 
 
-export { 
-	getAll, 
-	create, 
-	getByID, 
-	del, 
-	update
+export {
+  getAll,
+  create,
+  getByID,
+  del,
+  update,
 };
