@@ -1,7 +1,4 @@
-//const { v4: uuidv4 } = require('uuid');
-//const Column = require('../columns/column.model');
-
-import { uuidv4 } from 'uuid';
+import * as uuid from 'uuid';
 import Column from '../columns/column.model';
 
 
@@ -22,7 +19,7 @@ class Board {
   columns: any[];
   
   constructor({
-    id = uuidv4(),
+    id = uuid.v4(),
     title = 'String',
     columns = []
   } = {}) {
@@ -36,7 +33,7 @@ class Board {
    * @param (array) arr - Array of columns objects
   */
 
-  addColumn(arr){
+  addColumn(arr: any[]){
     for(let i=0; i<arr.length; i+=1){
       this.columns.push(new Column(arr[i]));  
     }
@@ -49,7 +46,7 @@ class Board {
     * @return (object) 
   */
 
-  static toResponse(board) {
+  static toResponse(board: any) {
     const { id, title, columns } = board;
     return { id, title, columns };
   } 

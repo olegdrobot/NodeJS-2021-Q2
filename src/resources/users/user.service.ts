@@ -1,8 +1,6 @@
 import * as usersRepo from './user.memory.repository';
 import User from './user.model';
 
-//const usersRepo = require('./user.memory.repository');
-
 const getAll = () => usersRepo.getAll();
 
 const create = (data: User) => usersRepo.create(data);

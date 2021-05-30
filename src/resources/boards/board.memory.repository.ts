@@ -1,11 +1,6 @@
 import Board from './board.model';
 import * as tasksRepo from '../tasks/task.memory.repository';
 
-/*
-const Board = require('./board.model');
-const tasksRepo = require('../tasks/task.memory.repository');
-*/
-
 let boardsDB: any[] =[];
 
 /**

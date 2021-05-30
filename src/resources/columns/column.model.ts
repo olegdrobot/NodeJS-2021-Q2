@@ -1,6 +1,4 @@
-import { uuidv4 } from 'uuid';
-
-//const { v4: uuidv4 } = require('uuid');
+import * as uuid from 'uuid';
 
 /** Class representing a Column */
 
@@ -17,7 +15,7 @@ class Column {
   order: number;
 
   constructor({
-    id = uuidv4(),
+    id = uuid.v4(),
     title = 'string',
     order = 0
   } = {}) {

@@ -16,7 +16,7 @@ const getAll = async () => usersDB;
  * @return (object) newUser - It's User which will be created and add to the database
 */
 
-const create = async (data) => {
+const create = async (data: any) => {
 	
 	const newUser: User = new User (data);
 	usersDB.push(newUser);	

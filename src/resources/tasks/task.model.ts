@@ -1,4 +1,4 @@
-import { uuidv4 } from 'uuid';
+import * as uuid from 'uuid';
 
 /** Class representing a Task */
 
@@ -20,13 +20,13 @@ class Task {
     title: string;
     order: number;
     description: string;
-    userId: string;
+    userId: string | undefined;
     boardId: string;
-    columnId: string;
+    columnId: string | undefined;
     id?: string;
-    
+
   constructor({
-    id = uuidv4(),
+    id = uuid.v4(),
     title = 'string',
     order = 0,
     description = 'string',
@@ -50,7 +50,7 @@ class Task {
     * @return (object) 
   */
 
-  static toResponse(task) {
+  static toResponse(task: any) {
     const { id, title, order, description, userId, boardId, columnId } = task;
     return { id, title, order, description, userId, boardId, columnId };
   }

@@ -1,4 +1,4 @@
-import { uuidv4 } from 'uuid';
+import * as uuid from 'uuid';
 
 /** Class representing a User */
 
@@ -19,7 +19,7 @@ class User {
     id?: string;
     
   constructor({
-    id = uuidv4(),
+    id = uuid.v4(),
     name = 'USER',
     login = 'user',
     password = 'P@55w0rd'
@@ -36,7 +36,7 @@ class User {
     * @return (object) 
   */
 
-  static toResponse(user) {
+  static toResponse(user: any) {
     const { id, name, login } = user;
     return { id, name, login };
   }

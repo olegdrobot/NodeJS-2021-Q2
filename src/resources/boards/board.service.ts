@@ -1,17 +1,15 @@
-//const boardRepo = require('./board.memory.repository');
-
 import * as boardRepo from './board.memory.repository';
 import Board from './board.model';
 
 const getAll = () => boardRepo.getAll();
 
-const create = (data) => boardRepo.create(data);
+const create = (data: any) => boardRepo.create(data);
 
-const getByID = (id) => boardRepo.getByID(id);
+const getByID = (id: string) => boardRepo.getByID(id);
 
-const update = (data) => boardRepo.update(data);
+const update = (data: Board) => boardRepo.update(data);
 
-const del = (id) => boardRepo.del(id);
+const del = (id: string) => boardRepo.del(id);
 
 //module.exports = { getAll, create, getByID, update, del };
 
