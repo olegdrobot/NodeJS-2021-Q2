@@ -15,7 +15,6 @@ const delBoardsTask = (id: string) => tasksRepo.delBoardsTask(id);
 
 const delTaskUser = (id: string) => tasksRepo.delTaskUser(id);
 
-// module.exports = { getAll, create, getByID, update, del, delBoardsTask, delTaskUser };
 
 export {
   getAll,

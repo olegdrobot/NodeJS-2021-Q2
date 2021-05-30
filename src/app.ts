@@ -25,5 +25,4 @@ app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 app.use('/boards', taskRouter);
 
-// module.exports = app;
 export default app;

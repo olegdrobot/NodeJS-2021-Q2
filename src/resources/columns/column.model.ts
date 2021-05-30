@@ -27,5 +27,4 @@ class Column {
 };
 
 
-// module.exports = Column;
 export default Column;

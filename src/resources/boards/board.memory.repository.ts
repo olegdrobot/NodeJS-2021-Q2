@@ -68,7 +68,6 @@ const del = async (id: string) => {
 };
 
 
-// module.exports = { getAll, create, getByID, update, del };
 export {
   getAll,
   create,

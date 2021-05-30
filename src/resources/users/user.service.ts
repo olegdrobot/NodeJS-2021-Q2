@@ -11,7 +11,6 @@ const del = (id: string) => usersRepo.del(id);
 
 const update = (updateData: User) => usersRepo.update(updateData);
 
-// module.exports = { getAll, create, getByID, del, update };
 export {
   getAll,
   create,

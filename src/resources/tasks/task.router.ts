@@ -6,9 +6,7 @@ import * as tasksService from './task.service';
 const router = express.Router();
 
 router.route('/:boardId/tasks').get(async (_req: Request, res: Response): Promise<void> => {
-  // const { boardId } = req.params;
   const boardTasks = await tasksService.getAll();
-
   res.json(boardTasks.map(Task.toResponse));
 });
 

@@ -19,7 +19,6 @@ const getAll = async () => tasksDB;
 const create = async (data: Task) => {
   const newTask = new Task(data);
   tasksDB.push(newTask);
-  // console.log(tasksDB);
   return newTask;
 };
 

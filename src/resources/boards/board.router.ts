@@ -17,8 +17,6 @@ router.route('/').post(async (req: Request, res: Response): Promise<void> =>{
 });
 
 router.route('/:id').get(async (req: Request, res: Response): Promise<void> =>{
-  // let BoardId: string;
-  // BoardId = req.params['id'];
   const board = await boardsService.getByID(String(req.params['id']));
   if (board) res.status(200).send(Board.toResponse(board));
   else res.sendStatus(404);
@@ -30,11 +28,9 @@ router.route('/:id').put(async (req: Request, res: Response): Promise<void> => {
 });
 
 router.route('/:id').delete(async (req: Request, res: Response): Promise<void> => {
-  // const BoardId: string = req.params.id;
   await boardsService.del(String(req.params['id']));
   res.sendStatus(200);
 });
 
-// module.exports = router;
 
 export default router;

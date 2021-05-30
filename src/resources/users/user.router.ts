@@ -39,5 +39,4 @@ router.route('/:id').put(async (req: Request, res: Response): Promise<void> => {
   res.status(200).send(User.toResponse(user));
 });
 
-// module.exports = router;
 export default router;
