@@ -24,4 +24,14 @@ function logService(req: Request, res: Response, next: NextFunction) {
     
 }
 
-export {logService};
+function errorCatcher(err: Error, _req: Request, _res: Response, 
+_next: NextFunction){
+	console.log('errorCatcher ', err);
+	/*
+	console.log("Interal Server Error");	
+	res.status(500);
+  	res.render('error', { error: err });
+	*/
+}
+
+export {logService, errorCatcher};

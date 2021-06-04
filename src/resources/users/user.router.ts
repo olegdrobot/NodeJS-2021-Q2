@@ -24,8 +24,13 @@ router.route('/').post(async (req: Request, res: Response): Promise<void> => {
 
 
 router.route('/:id').get(async (req: Request, res: Response): Promise<void> =>{
-  const user = await usersService.getByID(String(req.params['id']));
-  res.status(200).send(User.toResponse(user));
+    const user = await usersService.getByID(String(req.params['id']));
+    if(user) {
+      res.status(200).send(User.toResponse(user));
+    } else {
+      throw new Error('User not found');
+    }
+    
 });
 
 

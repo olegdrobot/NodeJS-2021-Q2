@@ -29,8 +29,8 @@ const create = async (data: User) => {
 */
 
 const getByID = async (id: string) => {
-  const user = usersDB.filter((el)=>el.id === id);
-  return user[0];
+      const user = usersDB.filter((el)=>el.id === id);
+      return user[0];
 };
 
 /**
