@@ -1,4 +1,4 @@
-import { Request, Response } from 'express';
+import { Request, Response, NextFunction } from 'express';
 import * as express from 'express';
 import User from './user.model';
 import * as usersService from './user.service';
@@ -11,7 +11,7 @@ router.route('/').get(async (_req: Request, res: Response): Promise<void> => {
 });
 
 
-router.route('/').post(async (req: Request, res: Response): Promise<void> => {
+router.route('/').post(async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   const data = {
   	name: req.body.name,
   	login: req.body.login,
@@ -19,16 +19,46 @@ router.route('/').post(async (req: Request, res: Response): Promise<void> => {
   };
 
   const user = await usersService.create(data);
-  res.status(201).send(User.toResponse(user));
+  if(user){
+    res.status(201).send(User.toResponse(user));
+  } else {
+    next({
+        status: 500,
+        message: "User wasn't created"
+      });
+  }
+  
 });
 
 
-router.route('/:id').get(async (req: Request, res: Response): Promise<void> =>{
+router.route('/:id').get(async (req: Request, res: Response, next: NextFunction): Promise<void> =>{
     const user = await usersService.getByID(String(req.params['id']));
     if(user) {
       res.status(200).send(User.toResponse(user));
     } else {
-      throw new Error('User not found');
+      next({
+        status: 500,
+        message: "Error UserID"
+      });
+
+      //throw new Error('User not found');
+      
+      /*
+      throw new Error(JSON.stringify({
+        status: "500",
+        message: "User not found"
+      }));
+      
+     -----------------------------
+      res.status(500).json({
+        status: "500",
+        message: "User not found"
+      });
+       */
+
+      //next("Error UserID");
+      //res.status(500);
+      
     }
     
 });
@@ -39,9 +69,17 @@ router.route('/:id').delete(async (req: Request, res: Response): Promise<void> =
   res.sendStatus(204);
 });
 
-router.route('/:id').put(async (req: Request, res: Response): Promise<void> => {
+router.route('/:id').put(async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   const user = await usersService.update(req.body);
-  res.status(200).send(User.toResponse(user));
+  if(user) {
+    res.status(200).send(User.toResponse(user));
+  } else {
+     next({
+        status: 500,
+        message: "User wasn't updated"
+      });
+  }
+  
 });
 
 export default router;

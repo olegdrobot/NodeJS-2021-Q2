@@ -24,14 +24,28 @@ function logService(req: Request, res: Response, next: NextFunction) {
     
 }
 
-function errorCatcher(err: Error, _req: Request, _res: Response, 
-_next: NextFunction){
-	console.log('errorCatcher ', err);
-	/*
-	console.log("Interal Server Error");	
-	res.status(500);
-  	res.render('error', { error: err });
-	*/
+
+interface generalError extends Error {
+  status: number;
+  message: string;
+}
+
+
+function errorCatcher(err: generalError, _req: Request, res: Response, _next: NextFunction){
+	console.log('Error status: ', err.status, 'Error message: ', err.message);
+	const date = new Date();
+	const msg = `${date} Error status: ${err.status} err.status: ${err.message} \n`;
+
+	fs.appendFile("logErrors.txt", msg, (error) => {
+      	if (error) {
+      	  throw error;
+     	}
+      });
+
+	res.status(500).send({
+    status: err.status,
+    message: err.message
+  });
 }
 
 export {logService, errorCatcher};
