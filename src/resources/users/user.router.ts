@@ -40,24 +40,6 @@ router.route('/:id').get(async (req: Request, res: Response, next: NextFunction)
         status: 500,
         message: "Error UserID"
       });
-
-      //throw new Error('User not found');
-      
-      /*
-      throw new Error(JSON.stringify({
-        status: "500",
-        message: "User not found"
-      }));
-      
-     -----------------------------
-      res.status(500).json({
-        status: "500",
-        message: "User not found"
-      });
-       */
-
-      //next("Error UserID");
-      //res.status(500);
       
     }
     
