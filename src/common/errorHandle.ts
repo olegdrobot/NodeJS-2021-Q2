@@ -45,7 +45,8 @@ function errorCatcher(err: generalError, _req: Request, res: Response, _next: Ne
 	res.status(500).send({
     status: err.status,
     message: err.message
-  });
+    });
+    _next();
 }
 
 export {logService, errorCatcher};

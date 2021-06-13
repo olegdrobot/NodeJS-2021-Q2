@@ -10,6 +10,12 @@ services:
     environment:
       PORT: 4000
     image: olegdrobot/nodejs-task6
+    networks: 
+      - frontend
+      - backend
+    volumes: 
+      - src:/user/app/src
+      - logs:/user/app/logs
     restart: on-failure
 
   postgres:
@@ -20,4 +26,26 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}  
       POSTGRES_DB: ${POSTGRES_DB}
-    image: olegdrobot/nodejs-task6-postgres 
+      DB_DATA: /var/lib/postgresql/data
+    image: olegdrobot/nodejs-task6-postgres
+    networks: 
+      - backend
+    volumes:  
+      - db-data:/var/lib/postgresql/data
+    restart: on-failure
+
+volumes: 
+    logs:
+        external: true
+    db-data:
+        external: true
+    src:
+        external: true
+
+networks:
+    frontend: 
+        name: frontend
+        driver: bridge
+    backend: 
+        name: backend
+        driver: bridge
