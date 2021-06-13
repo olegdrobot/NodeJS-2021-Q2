@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  node: 
+    build: .
+    ports:
+      - ${PORT}:${PORT}
+    depends_on:
+      - postgres
+    environment:
+      PORT: 4000
+    image: olegdrobot/nodejs-task6
+    restart: on-failure
+
+  postgres:
+    build: ./database
+    ports: 
+      - ${POSTGRES_PORT}:${POSTGRES_PORT}
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}  
+      POSTGRES_DB: ${POSTGRES_DB}
+    image: olegdrobot/nodejs-task6-postgres 
