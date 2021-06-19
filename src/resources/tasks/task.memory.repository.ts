@@ -1,4 +1,4 @@
-import Task from './task.model';
+//import Task from './task.model';
 import "reflect-metadata";
 import {createConnection} from "typeorm";
 import {Task} from "./entity/Task";
