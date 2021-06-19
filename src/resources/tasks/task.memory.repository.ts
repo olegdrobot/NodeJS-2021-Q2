@@ -1,5 +1,7 @@
 import Task from './task.model';
-
+import "reflect-metadata";
+import {createConnection} from "typeorm";
+import {Task} from "./entity/Task";
 
 let tasksDB = new Array();
 
@@ -17,9 +19,32 @@ const getAll = async () => tasksDB;
 */
 
 const create = async (data: Task) => {
+  /*
+  createConnection().then(async connection(data) =>{
+     console.log("Inserting a new user into the database...");
+    const task = new Task();
+    task.id = data.id;
+    task.title = data.title;
+    task.order = data.order;
+    task.description = data.description;
+    task.userId = data.userId;
+    task.boardId = data.boardId;
+    task.columnId = data.columnId;
+    await connection.manager.save(task);
+     console.log("Saved a new task with id: " + task.id);
+
+    console.log("Loading users from the database...");
+    const tasks = await connection.manager.find(Task);
+    console.log("Loaded users: ", tasks);
+
+  }).catch(error => console.log(error));
+  */
+
+
   const newTask = new Task(data);
   tasksDB.push(newTask);
   return newTask;
+
 };
 
 /**
