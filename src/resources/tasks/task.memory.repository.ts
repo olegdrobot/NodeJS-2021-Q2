@@ -32,7 +32,7 @@ const create = async (data: Partial<Task>) => {
   console.log('taskRepository ', taskRepository);
   const newTask = taskRepository.create(data);
   await taskRepository.save(newTask);
-  return new Task(data);
+  return newTask;
 /*
   const newTask = new Task(data);
   tasksDB.push(newTask);

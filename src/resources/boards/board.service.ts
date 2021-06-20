@@ -1,5 +1,6 @@
 import * as boardRepo from './board.memory.repository';
-import Board from './board.model';
+//import Board from './board.model';
+import {Board} from "../../entity/Board";
 
 const getAll = () => boardRepo.getAll();
 
