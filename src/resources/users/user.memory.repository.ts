@@ -1,11 +1,12 @@
 //import User from './user.model';
-import * as tasksRepo from '../tasks/task.memory.repository';
+//import * as tasksRepo from '../tasks/task.memory.repository';
 
 import "reflect-metadata";
-import {getRepository} from "typeorm";
+import {getRepository, getConnection} from "typeorm";
 import {User} from "../../entity/User";
+import {Task} from "../../entity/Task";
 
-let usersDB = new Array();
+// let usersDB = new Array();
 
 /**
  * This function return all Users from the database
@@ -44,7 +45,9 @@ const create = async (data: Partial<User>) => {
 */
 
 const getByID = async (id: string) => {
-  
+  const userRepository = getRepository(User);
+  const user = userRepository.find({where: {id: id}});
+  return user;
   /*
       const user = usersDB.filter((el)=>el.id === id);
       return user[0];
@@ -58,12 +61,28 @@ const getByID = async (id: string) => {
 */
 
 const del = async (id: string) => {
+  const deletedUser = await getConnection()
+    .createQueryBuilder()
+    .delete()
+    .from(User)
+    .where("id = :id", { id: id })
+    .execute();
+  const updateTsks = await getConnection()
+    .createQueryBuilder()
+    .update(Task)
+    .set({ userId: "null" })
+    .where("userId = :id", { id: id })
+    .execute();  
+   console.log('delUser ', deletedUser, ' ', updateTsks);
+
+/*
   usersDB = usersDB.filter((elem)=>{
     if (elem.id !== id) return true;
     return false;
   });
 
   await tasksRepo.delTaskUser(id);
+*/ 
 };
 
 /**
@@ -72,7 +91,18 @@ const del = async (id: string) => {
  * @return (object) updatedUser - It's updated User
 */
 
-const update = async (updateData: Partial<User>) => {
+const update = async (id: string, updateData: Partial<User>) => {
+   const updatedUser = await getConnection()
+    .createQueryBuilder()
+    .update(User)
+    .set({ name: updateData.name, 
+           login: updateData.login,
+           password: updateData.password
+     })
+    .where("id = :id", { id: id })
+    .execute();
+    return updatedUser;
+/*
   let updatedUser = {};
   for (let i=0; i<usersDB.length; i+=1) {
     if (usersDB[i].id === updateData.id) {
@@ -84,6 +114,7 @@ const update = async (updateData: Partial<User>) => {
   }
 
   return updatedUser;
+*/
 };
 
 

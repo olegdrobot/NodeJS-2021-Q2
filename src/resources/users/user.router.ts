@@ -56,7 +56,8 @@ router.route('/:id').delete(async (req: Request, res: Response): Promise<void> =
 });
 
 router.route('/:id').put(async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-  const user = await usersService.update(req.body);
+  const {id} = req.params;
+  const user = await usersService.update(String(id), req.body);
   if(user) {
     //res.status(200).send(User.toResponse(user));
     res.status(200).send(user);

@@ -9,7 +9,7 @@ const getByID = (id: string) => usersRepo.getByID(id);
 
 const del = (id: string) => usersRepo.del(id);
 
-const update = (updateData: Partial<User>) => usersRepo.update(updateData);
+const update = (id: string, updateData: Partial<User>) => usersRepo.update(id, updateData);
 
 export {
   getAll,
