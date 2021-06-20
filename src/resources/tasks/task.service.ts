@@ -1,9 +1,10 @@
 import * as tasksRepo from './task.memory.repository';
-import Task from './task.model';
+//import Task from './task.model';
+import {Task} from "../../entity/Task";
 
-const getAll = () => tasksRepo.getAll();
+const getAll = (boardId: string) => tasksRepo.getAll(boardId);
 
-const create = (data: Task) => tasksRepo.create(data);
+const create = (data: Partial<Task>) => tasksRepo.create(data);
 
 const getByID = (boadrId: string, taskId: string) => tasksRepo.getByID(boadrId, taskId);
 

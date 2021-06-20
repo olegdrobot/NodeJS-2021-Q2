@@ -1,7 +1,8 @@
 //import Task from './task.model';
+
 import "reflect-metadata";
-import {createConnection} from "typeorm";
-import {Task} from "./entity/Task";
+import {getRepository, getConnection} from "typeorm";
+import {Task} from "../../entity/Task";
 
 let tasksDB = new Array();
 
@@ -10,7 +11,14 @@ let tasksDB = new Array();
  * @return (array) tasksDB - It's array of Tasks objects
 */
 
-const getAll = async () => tasksDB;
+//const getAll = async () => tasksDB;
+
+const getAll = async (boardId: string) => {
+  //await createConnection();
+  const taskRepository = getRepository(Task);
+  const tasks = taskRepository.find({where: {boardId: boardId}});
+  return tasks;
+};
 
 /**
  * This function create a new Task
@@ -18,33 +26,18 @@ const getAll = async () => tasksDB;
  * @return (object) newTask - It's Task which will be created and add to the database
 */
 
-const create = async (data: Task) => {
-  /*
-  createConnection().then(async connection(data) =>{
-     console.log("Inserting a new user into the database...");
-    const task = new Task();
-    task.id = data.id;
-    task.title = data.title;
-    task.order = data.order;
-    task.description = data.description;
-    task.userId = data.userId;
-    task.boardId = data.boardId;
-    task.columnId = data.columnId;
-    await connection.manager.save(task);
-     console.log("Saved a new task with id: " + task.id);
-
-    console.log("Loading users from the database...");
-    const tasks = await connection.manager.find(Task);
-    console.log("Loaded users: ", tasks);
-
-  }).catch(error => console.log(error));
-  */
-
-
+const create = async (data: Partial<Task>) => {
+  //await createConnection();
+  const taskRepository = getRepository(Task);
+  console.log('taskRepository ', taskRepository);
+  const newTask = taskRepository.create(data);
+  await taskRepository.save(newTask);
+  return new Task(data);
+/*
   const newTask = new Task(data);
   tasksDB.push(newTask);
   return newTask;
-
+*/
 };
 
 /**
@@ -55,8 +48,15 @@ const create = async (data: Task) => {
 */
 
 const getByID = async (boardId: string, taskId: string) => {
+  //await createConnection();
+  const taskRepository = getRepository(Task);
+  const tasks = taskRepository.find({where: {boardId: boardId, id: taskId}});
+  return tasks;
+
+  /*
   const task = tasksDB.filter((el)=>(el.boardId === boardId && el.id === taskId));
   return task[0];
+  */
 };
 
 /**
@@ -68,6 +68,19 @@ const getByID = async (boardId: string, taskId: string) => {
 */
 
 const update = async (boardId: string, taskId: string, data: Task) => {
+  const updatedTask = await getConnection()
+    .createQueryBuilder()
+    .update(Task)
+    .set({ title: data.title, 
+           order: data.order,
+           description: data.description,
+           userId: data.userId,
+           columnId: data.columnId 
+     })
+    .where("id = :id", { id: taskId })
+    .andWhere("boardId = :boardId", {boardId: boardId})
+    .execute();
+/*
   let updatedTask = {};
   for (let i=0; i<tasksDB.length; i+=1) {
     if (tasksDB[i].boardId === boardId && tasksDB[i].id === taskId ) {
@@ -79,7 +92,7 @@ const update = async (boardId: string, taskId: string, data: Task) => {
       updatedTask = tasksDB[i];
     }
   }
-
+*/
   return updatedTask;
 };
 
@@ -92,10 +105,20 @@ const update = async (boardId: string, taskId: string, data: Task) => {
 */
 
 const del = async (boardId: string, taskId: string) => {
-  tasksDB = tasksDB.filter((el)=>{
+ const deletedTask = await getConnection()
+    .createQueryBuilder()
+    .delete()
+    .from(Task)
+    .where("id = :id", { id: taskId })
+    .andWhere("boardId = :boardId", {boardId: boardId})
+    .execute();
+ console.log('deletedTask ', deletedTask);
+ /*
+ tasksDB = tasksDB.filter((el)=>{
     if (el.boardId !== boardId || el.id !== taskId) return true;
     return false;
   });
+ */
 };
 
 /**

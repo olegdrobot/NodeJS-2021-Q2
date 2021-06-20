@@ -1,1 +1,1 @@
-FROM postgres:11.12-alpine
+FROM postgres:latest
