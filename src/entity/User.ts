@@ -34,4 +34,9 @@ export class User implements IUser {
     @Column({ nullable: true })
     password: string;
 
+    static toResponse(user: Partial<IUser>) {
+      const { id, name, login } = user;
+      return { id, name, login };
+    }
+
 }

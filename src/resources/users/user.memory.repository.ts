@@ -72,7 +72,7 @@ const del = async (id: string) => {
   const updateTsks = await getConnection()
     .createQueryBuilder()
     .update(Task)
-    .set({ userId: "null" })
+    .set({ userId: 'null'})
     .where("userId = :id", { id: id })
     .execute();  
    console.log('delUser ', deletedUser, ' ', updateTsks);
@@ -94,7 +94,7 @@ const del = async (id: string) => {
 */
 
 const update = async (id: string, updateData: Partial<User>) => {
-   const updatedUser = await getConnection()
+   await getConnection()
     .createQueryBuilder()
     .update(User)
     .set({ name: updateData.name, 
@@ -103,7 +103,9 @@ const update = async (id: string, updateData: Partial<User>) => {
      })
     .where("id = :id", { id: id })
     .execute();
-    return updatedUser;
+    const userRepository = getRepository(User);
+  const user = await userRepository.findOne(id);
+    return user;
 /*
   let updatedUser = {};
   for (let i=0; i<usersDB.length; i+=1) {

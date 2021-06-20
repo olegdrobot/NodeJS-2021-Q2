@@ -22,8 +22,8 @@ router.route('/').post(async (req: Request, res: Response, next: NextFunction): 
 
   const user = await usersService.create(data);
   if(user){
-    //res.status(201).send(User.toResponse(user));
-    res.status(201).json(user);
+    res.status(201).send(User.toResponse(user));
+    //res.status(201).json(user);
   } else {
     next({
         status: 500,
@@ -60,8 +60,8 @@ router.route('/:id').put(async (req: Request, res: Response, next: NextFunction)
   const {id} = req.params;
   const user = await usersService.update(String(id), req.body);
   if(user) {
-    //res.status(200).send(User.toResponse(user));
-    res.status(200).json(user);
+    res.status(200).send(User.toResponse(user));
+    //res.status(200).json(user);
   } else {
      next({
         status: 500,
