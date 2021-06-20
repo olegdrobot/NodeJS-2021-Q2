@@ -50,7 +50,7 @@ const create = async (data: Partial<Task>) => {
 const getByID = async (boardId: string, taskId: string) => {
   //await createConnection();
   const taskRepository = getRepository(Task);
-  const tasks = taskRepository.find({where: {boardId: boardId, id: taskId}});
+  const tasks = taskRepository.findOne({where: {boardId: boardId, id: taskId}});
   return tasks;
 
   /*
@@ -68,7 +68,7 @@ const getByID = async (boardId: string, taskId: string) => {
 */
 
 const update = async (boardId: string, taskId: string, data: Task) => {
-  const updatedTask = await getConnection()
+  await getConnection()
     .createQueryBuilder()
     .update(Task)
     .set({ title: data.title, 
@@ -80,6 +80,10 @@ const update = async (boardId: string, taskId: string, data: Task) => {
     .where("id = :id", { id: taskId })
     .andWhere("boardId = :boardId", {boardId: boardId})
     .execute();
+  const taskRepository = getRepository(Task);
+  const updatedTask = taskRepository.findOne({where: {boardId: boardId, id: taskId}});  
+    return updatedTask;
+
 /*
   let updatedTask = {};
   for (let i=0; i<tasksDB.length; i+=1) {
@@ -93,7 +97,7 @@ const update = async (boardId: string, taskId: string, data: Task) => {
     }
   }
 */
-  return updatedTask;
+  
 };
 
 /**

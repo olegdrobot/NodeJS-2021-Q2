@@ -30,7 +30,7 @@ const create = async (data: Partial<User>) => {
   const userRepository = getRepository(User);
   const newUser = userRepository.create(data);
   await userRepository.save(newUser);
-  return new User(data);
+  return newUser;
 /*
   const newUser: User = new User(data);
   usersDB.push(newUser);
@@ -45,8 +45,10 @@ const create = async (data: Partial<User>) => {
 */
 
 const getByID = async (id: string) => {
+console.log('ID USER getByID ', id);
   const userRepository = getRepository(User);
-  const user = userRepository.find({where: {id: id}});
+  const user = await userRepository.findOne(id);
+  console.log('USER getByID ', user);
   return user;
   /*
       const user = usersDB.filter((el)=>el.id === id);

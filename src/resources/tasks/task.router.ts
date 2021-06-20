@@ -26,7 +26,7 @@ router.route('/:boardId/tasks').post(async (req: Request, res: Response, next: N
   const task = await tasksService.create(data);
   if(task) {
     //res.status(201).send(Task.toResponse(task));
-    res.status(201).send(task);
+    res.status(201).json(task);
   } else {
      next({
         status: 500,
@@ -37,7 +37,7 @@ router.route('/:boardId/tasks').post(async (req: Request, res: Response, next: N
 
 router.route('/:boardId/tasks/:taskId').get(async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   const task = await tasksService.getByID(String(req.params['boardId']), String(req.params['taskId']));
-  if (task) res.status(200).send(task) /*res.status(200).send(Task.toResponse(task))*/;
+  if (task) res.status(200).json(task) /*res.status(200).send(Task.toResponse(task))*/;
   else {
     res.sendStatus(404);
     next({
@@ -52,7 +52,7 @@ router.route('/:boardId/tasks/:taskId').put(async (req: Request, res: Response, 
   const task = await tasksService.update(String(boardId), String(taskId), req.body);
   if(task){
     //res.status(200).send(Task.toResponse(task));
-    res.status(200).send(task);
+    res.status(200).json(task);
   } else {
      next({
         status: 500,

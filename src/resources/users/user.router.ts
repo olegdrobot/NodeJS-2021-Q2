@@ -23,7 +23,7 @@ router.route('/').post(async (req: Request, res: Response, next: NextFunction): 
   const user = await usersService.create(data);
   if(user){
     //res.status(201).send(User.toResponse(user));
-    res.status(201).send(user);
+    res.status(201).json(user);
   } else {
     next({
         status: 500,
@@ -36,9 +36,10 @@ router.route('/').post(async (req: Request, res: Response, next: NextFunction): 
 
 router.route('/:id').get(async (req: Request, res: Response, next: NextFunction): Promise<void> =>{
     const user = await usersService.getByID(String(req.params['id']));
+
     if(user) {
       //res.status(200).send(User.toResponse(user));
-      res.status(200).send(user);
+      res.status(200).json(user);
     } else {
       next({
         status: 500,
@@ -52,7 +53,7 @@ router.route('/:id').get(async (req: Request, res: Response, next: NextFunction)
 
 router.route('/:id').delete(async (req: Request, res: Response): Promise<void> => {
   await usersService.del(String(req.params['id']));
-  res.sendStatus(204);
+  res.status(204).json({message: "User deleted"});
 });
 
 router.route('/:id').put(async (req: Request, res: Response, next: NextFunction): Promise<void> => {
@@ -60,7 +61,7 @@ router.route('/:id').put(async (req: Request, res: Response, next: NextFunction)
   const user = await usersService.update(String(id), req.body);
   if(user) {
     //res.status(200).send(User.toResponse(user));
-    res.status(200).send(user);
+    res.status(200).json(user);
   } else {
      next({
         status: 500,
