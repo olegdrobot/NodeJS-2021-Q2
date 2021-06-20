@@ -1,5 +1,9 @@
-import User from './user.model';
+//import User from './user.model';
 import * as tasksRepo from '../tasks/task.memory.repository';
+
+import "reflect-metadata";
+import {getRepository} from "typeorm";
+import {User} from "../../entity/User";
 
 let usersDB = new Array();
 
@@ -8,18 +12,29 @@ let usersDB = new Array();
  * @return (array) usersDB - It's array of Users objects
 */
 
-const getAll = async () => usersDB;
+//const getAll = async () => usersDB;
+const getAll = async () => {
+  const userRepository = getRepository(User);
+  const users = userRepository.find();
+  return users;
 
+};
 /**
  * This function create a new User
  * @param (object) data - It's created User
  * @return (object) newUser - It's User which will be created and add to the database
 */
 
-const create = async (data: User) => {
+const create = async (data: Partial<User>) => {
+  const userRepository = getRepository(User);
+  const newUser = userRepository.create(data);
+  await userRepository.save(newUser);
+  return new User(data);
+/*
   const newUser: User = new User(data);
   usersDB.push(newUser);
   return newUser;
+*/
 };
 
 /**
@@ -29,8 +44,11 @@ const create = async (data: User) => {
 */
 
 const getByID = async (id: string) => {
+  
+  /*
       const user = usersDB.filter((el)=>el.id === id);
       return user[0];
+  */    
 };
 
 /**
@@ -54,7 +72,7 @@ const del = async (id: string) => {
  * @return (object) updatedUser - It's updated User
 */
 
-const update = async (updateData: User) => {
+const update = async (updateData: Partial<User>) => {
   let updatedUser = {};
   for (let i=0; i<usersDB.length; i+=1) {
     if (usersDB[i].id === updateData.id) {

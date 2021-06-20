@@ -12,9 +12,9 @@ interface IUser {
 export class User implements IUser {
 	constructor({
       id = uuid.v4(),
-      name = 'USER',
-      login = 'user',
-      password = 'P@55w0rd',
+      name = 'string',
+      login = 'string',
+      password = 'string'
     } = {}) {
       this.id = id;
       this.name = name;

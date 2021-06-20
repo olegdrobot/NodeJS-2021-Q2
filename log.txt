@@ -30,3 +30,8 @@ Sun Jun 20 2021 14:46:26 GMT+0300 (Москва, стандартное врем
 Sun Jun 20 2021 14:47:35 GMT+0300 (Москва, стандартное время) /boards/1/tasks/ {} undefined {"title":"updated","order":2,"description":"updated","userId":"789101112","columnId":"updated"} 404 
 Sun Jun 20 2021 14:48:30 GMT+0300 (Москва, стандартное время) /1/tasks/06035139-b004-427f-9e36-697714c70b18 {} {"boardId":"1","taskId":"06035139-b004-427f-9e36-697714c70b18"} {} 200 
 Sun Jun 20 2021 15:03:09 GMT+0300 (Москва, стандартное время) /1/tasks {} {"boardId":"1"} {"id":"0001","title":"games","order":1,"description":"good game","userId":"123456","boardId":"board1","columnId":"clmn1"} 201 
+Sun Jun 20 2021 15:40:13 GMT+0300 (Москва, стандартное время) / {} {} {"name":"Vasya","login":"vasiliy","password":"123456"} 201 
+Sun Jun 20 2021 15:54:15 GMT+0300 (Москва, стандартное время) / {} {} {"name":"Petya","login":"pet","password":"hdgtrueu"} 201 
+Sun Jun 20 2021 15:54:56 GMT+0300 (Москва, стандартное время) / {} {} {"name":"Kolya","login":"Nikki","password":"1jj34mnf7"} 201 
+Sun Jun 20 2021 15:58:38 GMT+0300 (Москва, стандартное время) / {} {} {} 304 
+Sun Jun 20 2021 15:58:50 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
