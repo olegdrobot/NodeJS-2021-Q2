@@ -5,6 +5,9 @@ import "reflect-metadata";
 import {getRepository, getConnection} from "typeorm";
 import {User} from "../../entity/User";
 import {Task} from "../../entity/Task";
+import bcrypt from "bcrypt";
+
+const saltRounds = 10;
 
 // let usersDB = new Array();
 
@@ -27,8 +30,15 @@ const getAll = async () => {
 */
 
 const create = async (data: Partial<User>) => {
+  let {name, login, password} = data;
+  password = await bcrypt.hash(String(password), saltRounds);
+  const dataUser = {
+    name: name,
+    login: login,
+    password: password
+  };
   const userRepository = getRepository(User);
-  const newUser = userRepository.create(data);
+  const newUser = userRepository.create(dataUser);
   await userRepository.save(newUser);
   return newUser;
 /*
