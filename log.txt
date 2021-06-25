@@ -965,3 +965,285 @@ Fri Jun 25 2021 22:09:03 GMT+0300 (Москва, стандартное врем
 Fri Jun 25 2021 22:09:03 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
 Fri Jun 25 2021 22:09:03 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
 Fri Jun 25 2021 22:09:03 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 500 
+Fri Jun 25 2021 22:58:39 GMT+0300 (Москва, стандартное время) /users {} undefined {} 500 
+Fri Jun 25 2021 22:58:39 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 500 
+Fri Jun 25 2021 22:58:39 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 22:58:39 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 22:58:39 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 500 
+Fri Jun 25 2021 23:08:29 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Fri Jun 25 2021 23:08:29 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Fri Jun 25 2021 23:08:29 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Fri Jun 25 2021 23:08:29 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Fri Jun 25 2021 23:08:29 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 401 
+Fri Jun 25 2021 23:15:03 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Fri Jun 25 2021 23:15:03 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Fri Jun 25 2021 23:15:03 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Fri Jun 25 2021 23:15:03 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Fri Jun 25 2021 23:15:03 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 401 
+Fri Jun 25 2021 23:17:20 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Fri Jun 25 2021 23:17:20 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Fri Jun 25 2021 23:17:20 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Fri Jun 25 2021 23:17:20 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Fri Jun 25 2021 23:17:20 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 401 
+Fri Jun 25 2021 23:18:34 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Fri Jun 25 2021 23:18:34 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Fri Jun 25 2021 23:29:07 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Fri Jun 25 2021 23:29:07 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Fri Jun 25 2021 23:29:07 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Fri Jun 25 2021 23:32:08 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Fri Jun 25 2021 23:32:08 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Fri Jun 25 2021 23:32:08 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Fri Jun 25 2021 23:41:51 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Fri Jun 25 2021 23:41:51 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Fri Jun 25 2021 23:41:51 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Fri Jun 25 2021 23:45:38 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Fri Jun 25 2021 23:45:38 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Fri Jun 25 2021 23:45:38 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Fri Jun 25 2021 23:45:38 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Fri Jun 25 2021 23:45:38 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:01:02 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Sat Jun 26 2021 00:01:02 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Sat Jun 26 2021 00:01:02 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:01:02 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:01:02 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:02:41 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Sat Jun 26 2021 00:02:41 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Sat Jun 26 2021 00:02:41 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:03:39 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Sat Jun 26 2021 00:03:39 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Sat Jun 26 2021 00:03:39 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:03:39 GMT+0300 (Москва, стандартное время) /login {} {} {"login":"admin","password":"admin"} 401 
+Sat Jun 26 2021 00:03:39 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:03:39 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:03:39 GMT+0300 (Москва, стандартное время) /users {} undefined {} 500 
+Sat Jun 26 2021 00:03:40 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:03:40 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:03:40 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:03:40 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:03:40 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:03:40 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {} 500 
+Sat Jun 26 2021 00:03:40 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:07:37 GMT+0300 (Москва, стандартное время) /users {} {} {} 500 
+Sat Jun 26 2021 00:07:37 GMT+0300 (Москва, стандартное время) /users/123 {} {} {} 500 
+Sat Jun 26 2021 00:07:37 GMT+0300 (Москва, стандартное время) /users {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:07:37 GMT+0300 (Москва, стандартное время) /users/12345 {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:07:37 GMT+0300 (Москва, стандартное время) /users/12345 {} {} {} 500 
+Sat Jun 26 2021 00:07:37 GMT+0300 (Москва, стандартное время) /login {} {} {"login":"admin","password":"admin"} 401 
+Sat Jun 26 2021 00:07:38 GMT+0300 (Москва, стандартное время) /users {} {} {} 500 
+Sat Jun 26 2021 00:07:38 GMT+0300 (Москва, стандартное время) /users {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:07:38 GMT+0300 (Москва, стандартное время) /users {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:07:38 GMT+0300 (Москва, стандартное время) /users {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:07:38 GMT+0300 (Москва, стандартное время) /users/undefined {} {} {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:07:38 GMT+0300 (Москва, стандартное время) /users {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:07:38 GMT+0300 (Москва, стандартное время) /users/undefined {} {} {} 500 
+Sat Jun 26 2021 00:07:38 GMT+0300 (Москва, стандартное время) /users {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:08:44 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Sat Jun 26 2021 00:08:44 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Sat Jun 26 2021 00:08:44 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:08:44 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:08:44 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:08:44 GMT+0300 (Москва, стандартное время) /login {} {} {"login":"admin","password":"admin"} 401 
+Sat Jun 26 2021 00:08:44 GMT+0300 (Москва, стандартное время) /users {} undefined {} 500 
+Sat Jun 26 2021 00:08:44 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:08:44 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:08:44 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:08:44 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:08:44 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:08:44 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {} 500 
+Sat Jun 26 2021 00:08:44 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:11:21 GMT+0300 (Москва, стандартное время) /users/ {} undefined {} 401 
+Sat Jun 26 2021 00:11:58 GMT+0300 (Москва, стандартное время) / {} {} {} 304 
+Sat Jun 26 2021 00:12:07 GMT+0300 (Москва, стандартное время) /users/ {} undefined {} 401 
+Sat Jun 26 2021 00:13:54 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Sat Jun 26 2021 00:13:54 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Sat Jun 26 2021 00:13:54 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:13:54 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:13:54 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:13:54 GMT+0300 (Москва, стандартное время) /login {} {} {"login":"admin","password":"admin"} 401 
+Sat Jun 26 2021 00:13:54 GMT+0300 (Москва, стандартное время) /users {} undefined {} 500 
+Sat Jun 26 2021 00:13:54 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:13:54 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:13:54 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:13:54 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:13:54 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:13:54 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {} 500 
+Sat Jun 26 2021 00:13:54 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:13:55 GMT+0300 (Москва, стандартное время) /boards {} undefined {} 401 
+Sat Jun 26 2021 00:13:55 GMT+0300 (Москва, стандартное время) /boards/12345/tasks {} undefined {} 401 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 401 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/12345/tasks/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/12345 {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 401 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/12345/tasks {} undefined {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 401 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/12345/tasks/12345 {} undefined {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 401 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/12345/tasks/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /login {} {} {"login":"admin","password":"admin"} 401 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /login {} {} {"login":"admin","password":"admin"} 401 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards {} undefined {} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards {} undefined {} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks/undefined {} undefined {"title":"Autotest updated task"} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/undefined {} undefined {"title":"Autotest updated board"} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks/undefined {} undefined {} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/undefined {} undefined {} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 500 
+Sat Jun 26 2021 00:13:56 GMT+0300 (Москва, стандартное время) /boards/undefined {} undefined {} 500 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards {} undefined {} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards {} undefined {} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards/undefined {} undefined {"title":"Autotest updated board"} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards/undefined {} undefined {} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks/undefined {} undefined {"title":"Autotest updated task"} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks/undefined {} undefined {} 401 
+Sat Jun 26 2021 00:14:34 GMT+0300 (Москва, стандартное время) /boards/undefined {} undefined {} 401 
+Sat Jun 26 2021 00:14:35 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Sat Jun 26 2021 00:14:35 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:14:35 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:14:35 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:14:35 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:14:35 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:14:35 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {} 401 
+Sat Jun 26 2021 00:14:35 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /boards {} undefined {} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /boards {} undefined {} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /boards/undefined {} undefined {"title":"Autotest updated board"} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /boards/undefined {} undefined {} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {} 401 
+Sat Jun 26 2021 00:22:45 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:22:46 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 401 
+Sat Jun 26 2021 00:22:46 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 401 
+Sat Jun 26 2021 00:22:46 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {} 401 
+Sat Jun 26 2021 00:22:46 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {} 401 
+Sat Jun 26 2021 00:22:46 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 401 
+Sat Jun 26 2021 00:22:46 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 401 
+Sat Jun 26 2021 00:22:46 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks/undefined {} undefined {"title":"Autotest updated task"} 401 
+Sat Jun 26 2021 00:22:46 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks/undefined {} undefined {} 401 
+Sat Jun 26 2021 00:22:46 GMT+0300 (Москва, стандартное время) /boards/undefined {} undefined {} 401 
+Sat Jun 26 2021 00:23:43 GMT+0300 (Москва, стандартное время) /boards/12345/tasks {} undefined {} 401 
+Sat Jun 26 2021 00:23:43 GMT+0300 (Москва, стандартное время) /boards {} undefined {} 401 
+Sat Jun 26 2021 00:23:43 GMT+0300 (Москва, стандартное время) /boards/12345/tasks/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:23:43 GMT+0300 (Москва, стандартное время) /boards/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:23:43 GMT+0300 (Москва, стандартное время) /boards/12345/tasks {} undefined {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 401 
+Sat Jun 26 2021 00:23:43 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 401 
+Sat Jun 26 2021 00:23:43 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Sat Jun 26 2021 00:23:43 GMT+0300 (Москва, стандартное время) /boards/12345/tasks/12345 {} undefined {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 401 
+Sat Jun 26 2021 00:23:43 GMT+0300 (Москва, стандартное время) /boards/12345 {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 401 
+Sat Jun 26 2021 00:23:43 GMT+0300 (Москва, стандартное время) /boards/12345/tasks/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:23:43 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Sat Jun 26 2021 00:23:43 GMT+0300 (Москва, стандартное время) /boards/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:23:43 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:23:43 GMT+0300 (Москва, стандартное время) /login {} {} {"login":"admin","password":"admin"} 401 
+Sat Jun 26 2021 00:23:43 GMT+0300 (Москва, стандартное время) /login {} {} {"login":"admin","password":"admin"} 401 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 500 
+Sat Jun 26 2021 00:23:43 GMT+0300 (Москва, стандартное время) /login {} {} {"login":"admin","password":"admin"} 401 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards {} undefined {} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /users {} undefined {} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards {} undefined {} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards/undefined {} undefined {"title":"Autotest updated board"} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks {} undefined {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards/undefined {} undefined {} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks/undefined {} undefined {"title":"Autotest updated task"} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards/undefined/tasks/undefined {} undefined {} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:23:44 GMT+0300 (Москва, стандартное время) /boards/undefined {} undefined {} 500 
+Sat Jun 26 2021 00:24:51 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Sat Jun 26 2021 00:24:51 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Sat Jun 26 2021 00:24:51 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:24:51 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:24:51 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:24:51 GMT+0300 (Москва, стандартное время) /login {} {} {"login":"admin","password":"admin"} 401 
+Sat Jun 26 2021 00:24:51 GMT+0300 (Москва, стандартное время) /users {} undefined {} 500 
+Sat Jun 26 2021 00:24:51 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:24:51 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:24:51 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:24:51 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:24:51 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:24:51 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {} 500 
+Sat Jun 26 2021 00:24:51 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:35:31 GMT+0300 (Москва, стандартное время) /users/ {} undefined {} 401 
+Sat Jun 26 2021 00:38:42 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Sat Jun 26 2021 00:38:42 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Sat Jun 26 2021 00:38:42 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:38:42 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:38:42 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:38:42 GMT+0300 (Москва, стандартное время) /login {} {} {"login":"admin","password":"admin"} 401 
+Sat Jun 26 2021 00:38:43 GMT+0300 (Москва, стандартное время) /users {} undefined {} 500 
+Sat Jun 26 2021 00:38:43 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:38:43 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:38:43 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:38:43 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:38:43 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:38:43 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {} 500 
+Sat Jun 26 2021 00:38:43 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:42:05 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Sat Jun 26 2021 00:42:05 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 401 
+Sat Jun 26 2021 00:42:05 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:42:05 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:42:05 GMT+0300 (Москва, стандартное время) /login {} {} {"login":"admin","password":"admin"} 401 
+Sat Jun 26 2021 00:42:05 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 401 
+Sat Jun 26 2021 00:42:05 GMT+0300 (Москва, стандартное время) /users {} undefined {} 500 
+Sat Jun 26 2021 00:42:06 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:42:06 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:42:06 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:42:06 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:42:06 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:42:06 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {} 500 
+Sat Jun 26 2021 00:42:06 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Sat Jun 26 2021 00:48:35 GMT+0300 (Москва, стандартное время) / {} {} {} 304 
+Sat Jun 26 2021 00:48:49 GMT+0300 (Москва, стандартное время) /users/ {} undefined {} 401 
+Sat Jun 26 2021 00:50:32 GMT+0300 (Москва, стандартное время) /users {} undefined {} 401 
+Sat Jun 26 2021 00:50:32 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:50:32 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:50:32 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:50:32 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:50:32 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 
+Sat Jun 26 2021 00:50:32 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {} 401 
+Sat Jun 26 2021 00:50:32 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 401 

@@ -26,7 +26,7 @@ app.use('/', (req, res, next) => {
   next();
 });
 
-app.use('/login', loginRouter);
+app.use(loginRouter);
 app.use(checkToken);
 app.use('/users', userRouter);
 

@@ -18,6 +18,7 @@ const saltRounds = 10;
 
 //const getAll = async () => usersDB;
 const getAll = async () => {
+  console.log('----USER get all------');
   const userRepository = getRepository(User);
   const users = userRepository.find();
   return users;

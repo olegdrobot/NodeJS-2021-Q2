@@ -7,6 +7,7 @@ import * as usersService from './user.service';
 const router = express.Router();
 
 router.route('/').get(async (_req: Request, res: Response): Promise<void> => {
+  console.log('------USER ROUTER ALL');
   const users = await usersService.getAll();
   //res.json(users.map(User.toResponse));
   res.json(users);
