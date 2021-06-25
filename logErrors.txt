@@ -23,3 +23,22 @@ Sun Jun 20 2021 21:53:39 GMT+0300 (Москва, стандартное врем
 Sun Jun 20 2021 21:53:39 GMT+0300 (Москва, стандартное время) Error status: 500 err.status: Error UserID 
 Sun Jun 20 2021 21:59:57 GMT+0300 (Москва, стандартное время) Error status: 500 err.status: Error UserID 
 Sun Jun 20 2021 21:59:57 GMT+0300 (Москва, стандартное время) Error status: 500 err.status: Error UserID 
+Fri Jun 25 2021 18:11:15 GMT+0300 (Москва, стандартное время) Error status: 500 err.status: Error UserID 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) Error status: 500 err.status: User wasn't updated 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) Error status: 500 err.status: Error UserID 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) Error status: 500 err.status: User wasn't updated 
+Fri Jun 25 2021 21:37:29 GMT+0300 (Москва, стандартное время) Error status: undefined err.status: Unauthorized user! 
+Fri Jun 25 2021 21:37:29 GMT+0300 (Москва, стандартное время) Error status: undefined err.status: Unauthorized user! 
+Fri Jun 25 2021 21:37:29 GMT+0300 (Москва, стандартное время) Error status: undefined err.status: Unauthorized user! 
+Fri Jun 25 2021 21:37:29 GMT+0300 (Москва, стандартное время) Error status: undefined err.status: Unauthorized user! 
+Fri Jun 25 2021 21:37:29 GMT+0300 (Москва, стандартное время) Error status: undefined err.status: Unauthorized user! 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) Error status: 500 err.status: Error UserID 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) Error status: 500 err.status: User wasn't updated 
+Fri Jun 25 2021 21:47:07 GMT+0300 (Москва, стандартное время) Error status: 500 err.status: Error UserID 
+Fri Jun 25 2021 21:47:07 GMT+0300 (Москва, стандартное время) Error status: 500 err.status: User wasn't updated 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) Error status: 500 err.status: Error UserID 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) Error status: 500 err.status: User wasn't updated 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) Error status: undefined err.status: Unauthorized user! 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) Error status: 500 err.status: Error UserID 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) Error status: 500 err.status: User wasn't updated 
+Fri Jun 25 2021 21:50:08 GMT+0300 (Москва, стандартное время) Error status: undefined err.status: jwt malformed 

@@ -764,3 +764,204 @@ Thu Jun 24 2021 22:38:01 GMT+0300 (Москва, стандартное врем
 Thu Jun 24 2021 22:38:26 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
 Thu Jun 24 2021 22:39:13 GMT+0300 (Москва, стандартное время) / {} {} {"name":"Kolya","login":"Nikki","password":"1jj34mnf7"} 201 
 Thu Jun 24 2021 22:39:23 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 17:47:23 GMT+0300 (Москва, стандартное время) / {} {} {} 304 
+Fri Jun 25 2021 17:47:25 GMT+0300 (Москва, стандартное время) /favicon.ico {} undefined {} 404 
+Fri Jun 25 2021 17:49:03 GMT+0300 (Москва, стандартное время) / {} {} {"name":"Kolya","login":"Nikki","password":"1jj34mnf7"} 401 
+Fri Jun 25 2021 17:50:44 GMT+0300 (Москва, стандартное время) / {} {} {"name":"Kolya","login":"Nikki","password":"1jj34mnf7"} 401 
+Fri Jun 25 2021 17:52:04 GMT+0300 (Москва, стандартное время) / {} {} {"name":"Kolya","login":"Nikki","password":"1jj34mnf7"} 401 
+Fri Jun 25 2021 17:54:44 GMT+0300 (Москва, стандартное время) / {} {} {"name":"Kolya","login":"Nikki","password":"1jj34mnf7"} 401 
+Fri Jun 25 2021 17:56:06 GMT+0300 (Москва, стандартное время) / {} {} {"name":"Kolya","login":"Nikki","password":"1jj34mnf7"} 401 
+Fri Jun 25 2021 17:58:02 GMT+0300 (Москва, стандартное время) / {} {} {"name":"Kolya","login":"Nikki","password":"1jj34mnf7"} 401 
+Fri Jun 25 2021 18:11:15 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 18:11:15 GMT+0300 (Москва, стандартное время) / {} {} {"login":"admin","password":"admin"} 403 
+Fri Jun 25 2021 18:11:15 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 18:11:15 GMT+0300 (Москва, стандартное время) /users/123 {} {} {} 500 
+Fri Jun 25 2021 18:11:15 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 18:11:15 GMT+0300 (Москва, стандартное время) /ab3c2712-b208-415e-8172-c1102758f22f {} {"id":"ab3c2712-b208-415e-8172-c1102758f22f"} {} 200 
+Fri Jun 25 2021 18:11:15 GMT+0300 (Москва, стандартное время) /ab3c2712-b208-415e-8172-c1102758f22f {} {"id":"ab3c2712-b208-415e-8172-c1102758f22f"} {} 204 
+Fri Jun 25 2021 18:11:15 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) /users/12345 {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) /12345 {} {"id":"12345"} {} 204 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) /4c5b24da-23cf-47cb-bf4f-1a3cde70f4dd {} {"id":"4c5b24da-23cf-47cb-bf4f-1a3cde70f4dd"} {} 204 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) /98805027-4613-4898-b31e-a865c27ff343 {} {"id":"98805027-4613-4898-b31e-a865c27ff343"} {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"98805027-4613-4898-b31e-a865c27ff343"} 200 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) /98805027-4613-4898-b31e-a865c27ff343 {} {"id":"98805027-4613-4898-b31e-a865c27ff343"} {} 200 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) /98805027-4613-4898-b31e-a865c27ff343 {} {"id":"98805027-4613-4898-b31e-a865c27ff343"} {} 204 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) /10c6568a-336e-47d1-995d-87ee0d72e607 {} {"id":"10c6568a-336e-47d1-995d-87ee0d72e607"} {} 204 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) / {} {} {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 201 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) /ce9ad3f3-43bb-4641-975c-d2ac3e086933/tasks {} {"boardId":"ce9ad3f3-43bb-4641-975c-d2ac3e086933"} {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"574f5a67-4cbf-4525-9209-b4b9c097f087","boardId":"ce9ad3f3-43bb-4641-975c-d2ac3e086933"} 201 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) /ce9ad3f3-43bb-4641-975c-d2ac3e086933/tasks {} {"boardId":"ce9ad3f3-43bb-4641-975c-d2ac3e086933"} {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"574f5a67-4cbf-4525-9209-b4b9c097f087","boardId":"ce9ad3f3-43bb-4641-975c-d2ac3e086933"} 201 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) /574f5a67-4cbf-4525-9209-b4b9c097f087 {} {"id":"574f5a67-4cbf-4525-9209-b4b9c097f087"} {} 204 
+Fri Jun 25 2021 18:11:16 GMT+0300 (Москва, стандартное время) /ce9ad3f3-43bb-4641-975c-d2ac3e086933/tasks/fb147a00-a151-4bfe-a104-7ba333d02cf2 {} {"boardId":"ce9ad3f3-43bb-4641-975c-d2ac3e086933","taskId":"fb147a00-a151-4bfe-a104-7ba333d02cf2"} {} 200 
+Fri Jun 25 2021 20:37:10 GMT+0300 (Москва, стандартное время) / {} {} {"name":"Kolya","login":"Nikki","password":"1jj34mnf7"} 200 
+Fri Jun 25 2021 20:38:56 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 20:38:56 GMT+0300 (Москва, стандартное время) / {} {} {"login":"admin","password":"admin"} 403 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) /users/123 {} {} {} 500 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) /users/12345 {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) /bb4600cf-50ef-46e8-a095-7c2b62929318 {} {"id":"bb4600cf-50ef-46e8-a095-7c2b62929318"} {} 200 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) /12345 {} {"id":"12345"} {} 204 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) /bb4600cf-50ef-46e8-a095-7c2b62929318 {} {"id":"bb4600cf-50ef-46e8-a095-7c2b62929318"} {} 204 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) /61512b44-9b14-4efd-aa85-4e015683ad68 {} {"id":"61512b44-9b14-4efd-aa85-4e015683ad68"} {} 204 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) /5ecfdb3f-57ef-466e-8b15-59f4691d5d38 {} {"id":"5ecfdb3f-57ef-466e-8b15-59f4691d5d38"} {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"5ecfdb3f-57ef-466e-8b15-59f4691d5d38"} 200 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) /5ecfdb3f-57ef-466e-8b15-59f4691d5d38 {} {"id":"5ecfdb3f-57ef-466e-8b15-59f4691d5d38"} {} 200 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) /5ecfdb3f-57ef-466e-8b15-59f4691d5d38 {} {"id":"5ecfdb3f-57ef-466e-8b15-59f4691d5d38"} {} 204 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) /2ecee609-b88a-4345-92c8-290cfdde8119 {} {"id":"2ecee609-b88a-4345-92c8-290cfdde8119"} {} 204 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) / {} {} {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 201 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) /c1619d44-a5b0-4e78-a74a-8373bbba18fd/tasks {} {"boardId":"c1619d44-a5b0-4e78-a74a-8373bbba18fd"} {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"0a376033-16ec-411d-ba19-8dd4c1bea1a0","boardId":"c1619d44-a5b0-4e78-a74a-8373bbba18fd"} 201 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) /c1619d44-a5b0-4e78-a74a-8373bbba18fd/tasks {} {"boardId":"c1619d44-a5b0-4e78-a74a-8373bbba18fd"} {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"0a376033-16ec-411d-ba19-8dd4c1bea1a0","boardId":"c1619d44-a5b0-4e78-a74a-8373bbba18fd"} 201 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) /0a376033-16ec-411d-ba19-8dd4c1bea1a0 {} {"id":"0a376033-16ec-411d-ba19-8dd4c1bea1a0"} {} 204 
+Fri Jun 25 2021 20:38:57 GMT+0300 (Москва, стандартное время) /c1619d44-a5b0-4e78-a74a-8373bbba18fd/tasks/42c89450-0bd9-4a74-ae24-6047688d66b8 {} {"boardId":"c1619d44-a5b0-4e78-a74a-8373bbba18fd","taskId":"42c89450-0bd9-4a74-ae24-6047688d66b8"} {} 200 
+Fri Jun 25 2021 21:31:37 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 21:37:29 GMT+0300 (Москва, стандартное время) /users {} {} {} 500 
+Fri Jun 25 2021 21:37:29 GMT+0300 (Москва, стандартное время) /users/123 {} {} {} 500 
+Fri Jun 25 2021 21:37:29 GMT+0300 (Москва, стандартное время) /users {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:37:29 GMT+0300 (Москва, стандартное время) /users/12345 {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:37:29 GMT+0300 (Москва, стандартное время) /users/12345 {} {} {} 500 
+Fri Jun 25 2021 21:39:12 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 21:42:34 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 21:45:53 GMT+0300 (Москва, стандартное время) /login {} undefined {"login":"admin","password":"admin"} 404 
+Fri Jun 25 2021 21:45:53 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) /users/123 {} {} {} 500 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) /users/12345 {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) /dfd8e526-590d-45c7-ab55-bc0c7679ef91 {} {"id":"dfd8e526-590d-45c7-ab55-bc0c7679ef91"} {} 200 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) /12345 {} {"id":"12345"} {} 204 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) /dfd8e526-590d-45c7-ab55-bc0c7679ef91 {} {"id":"dfd8e526-590d-45c7-ab55-bc0c7679ef91"} {} 204 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) /fe07a25a-69d2-43b3-b1ef-a73ebe825f50 {} {"id":"fe07a25a-69d2-43b3-b1ef-a73ebe825f50"} {} 204 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) /667b7040-a30f-4fba-beb1-788d8679bd13 {} {"id":"667b7040-a30f-4fba-beb1-788d8679bd13"} {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"667b7040-a30f-4fba-beb1-788d8679bd13"} 200 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) /667b7040-a30f-4fba-beb1-788d8679bd13 {} {"id":"667b7040-a30f-4fba-beb1-788d8679bd13"} {} 200 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) /667b7040-a30f-4fba-beb1-788d8679bd13 {} {"id":"667b7040-a30f-4fba-beb1-788d8679bd13"} {} 204 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) /95ee6bee-3027-4d22-b475-b00235f6625d {} {"id":"95ee6bee-3027-4d22-b475-b00235f6625d"} {} 204 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) / {} {} {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 201 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) /eeee075d-e68f-4ebe-b181-eaa6ce8a4d99/tasks {} {"boardId":"eeee075d-e68f-4ebe-b181-eaa6ce8a4d99"} {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"a889a8f7-6f4b-4e13-a2ed-ec70275e87d0","boardId":"eeee075d-e68f-4ebe-b181-eaa6ce8a4d99"} 201 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) /eeee075d-e68f-4ebe-b181-eaa6ce8a4d99/tasks {} {"boardId":"eeee075d-e68f-4ebe-b181-eaa6ce8a4d99"} {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"a889a8f7-6f4b-4e13-a2ed-ec70275e87d0","boardId":"eeee075d-e68f-4ebe-b181-eaa6ce8a4d99"} 201 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) /a889a8f7-6f4b-4e13-a2ed-ec70275e87d0 {} {"id":"a889a8f7-6f4b-4e13-a2ed-ec70275e87d0"} {} 204 
+Fri Jun 25 2021 21:45:54 GMT+0300 (Москва, стандартное время) /eeee075d-e68f-4ebe-b181-eaa6ce8a4d99/tasks/52a817ce-dfe7-4e1c-a3d6-06f5085501fd {} {"boardId":"eeee075d-e68f-4ebe-b181-eaa6ce8a4d99","taskId":"52a817ce-dfe7-4e1c-a3d6-06f5085501fd"} {} 200 
+Fri Jun 25 2021 21:47:07 GMT+0300 (Москва, стандартное время) /login {} undefined {"login":"admin","password":"admin"} 404 
+Fri Jun 25 2021 21:47:07 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 21:47:07 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 21:47:07 GMT+0300 (Москва, стандартное время) /users/123 {} {} {} 500 
+Fri Jun 25 2021 21:47:07 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:47:07 GMT+0300 (Москва, стандартное время) /04f7ae5b-cb25-44b5-bd3d-79eb810de12d {} {"id":"04f7ae5b-cb25-44b5-bd3d-79eb810de12d"} {} 200 
+Fri Jun 25 2021 21:47:07 GMT+0300 (Москва, стандартное время) /04f7ae5b-cb25-44b5-bd3d-79eb810de12d {} {"id":"04f7ae5b-cb25-44b5-bd3d-79eb810de12d"} {} 204 
+Fri Jun 25 2021 21:47:07 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:47:07 GMT+0300 (Москва, стандартное время) /users/12345 {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:47:07 GMT+0300 (Москва, стандартное время) /12345 {} {"id":"12345"} {} 204 
+Fri Jun 25 2021 21:47:07 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:47:07 GMT+0300 (Москва, стандартное время) /be80a014-d7cf-42ce-b382-59b97ba749d5 {} {"id":"be80a014-d7cf-42ce-b382-59b97ba749d5"} {} 204 
+Fri Jun 25 2021 21:47:07 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:47:08 GMT+0300 (Москва, стандартное время) /600e2ffc-d89b-4c44-a152-6a20b3014048 {} {"id":"600e2ffc-d89b-4c44-a152-6a20b3014048"} {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"600e2ffc-d89b-4c44-a152-6a20b3014048"} 200 
+Fri Jun 25 2021 21:47:08 GMT+0300 (Москва, стандартное время) /600e2ffc-d89b-4c44-a152-6a20b3014048 {} {"id":"600e2ffc-d89b-4c44-a152-6a20b3014048"} {} 200 
+Fri Jun 25 2021 21:47:08 GMT+0300 (Москва, стандартное время) /600e2ffc-d89b-4c44-a152-6a20b3014048 {} {"id":"600e2ffc-d89b-4c44-a152-6a20b3014048"} {} 204 
+Fri Jun 25 2021 21:47:08 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:47:08 GMT+0300 (Москва, стандартное время) /fa89f960-55c1-4bf5-bdfa-e3a2ae98e541 {} {"id":"fa89f960-55c1-4bf5-bdfa-e3a2ae98e541"} {} 204 
+Fri Jun 25 2021 21:47:08 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:47:08 GMT+0300 (Москва, стандартное время) / {} {} {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 201 
+Fri Jun 25 2021 21:47:08 GMT+0300 (Москва, стандартное время) /c61371d9-ca74-48fb-826a-719a33679013/tasks {} {"boardId":"c61371d9-ca74-48fb-826a-719a33679013"} {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"86e7557e-3b30-4b34-aec8-c76aba4173df","boardId":"c61371d9-ca74-48fb-826a-719a33679013"} 201 
+Fri Jun 25 2021 21:47:08 GMT+0300 (Москва, стандартное время) /c61371d9-ca74-48fb-826a-719a33679013/tasks {} {"boardId":"c61371d9-ca74-48fb-826a-719a33679013"} {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"86e7557e-3b30-4b34-aec8-c76aba4173df","boardId":"c61371d9-ca74-48fb-826a-719a33679013"} 201 
+Fri Jun 25 2021 21:47:08 GMT+0300 (Москва, стандартное время) /86e7557e-3b30-4b34-aec8-c76aba4173df {} {"id":"86e7557e-3b30-4b34-aec8-c76aba4173df"} {} 204 
+Fri Jun 25 2021 21:47:08 GMT+0300 (Москва, стандартное время) /c61371d9-ca74-48fb-826a-719a33679013/tasks/822a31bb-0052-41cc-8715-0f255f2948d3 {} {"boardId":"c61371d9-ca74-48fb-826a-719a33679013","taskId":"822a31bb-0052-41cc-8715-0f255f2948d3"} {} 200 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) /login {} undefined {"login":"admin","password":"admin"} 404 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) /users/123 {} {} {} 500 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) /17433b98-af6a-44fb-ac11-935ff404d456 {} {"id":"17433b98-af6a-44fb-ac11-935ff404d456"} {} 200 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) /17433b98-af6a-44fb-ac11-935ff404d456 {} {"id":"17433b98-af6a-44fb-ac11-935ff404d456"} {} 204 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) /users/12345 {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) /12345 {} {"id":"12345"} {} 204 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) /9ab9a07b-1128-491f-afba-9e388e16220b {} {"id":"9ab9a07b-1128-491f-afba-9e388e16220b"} {} 204 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) /e725ccf7-52b8-4a66-a4b1-85f322bb2318 {} {"id":"e725ccf7-52b8-4a66-a4b1-85f322bb2318"} {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"e725ccf7-52b8-4a66-a4b1-85f322bb2318"} 200 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) /e725ccf7-52b8-4a66-a4b1-85f322bb2318 {} {"id":"e725ccf7-52b8-4a66-a4b1-85f322bb2318"} {} 200 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) /e725ccf7-52b8-4a66-a4b1-85f322bb2318 {} {"id":"e725ccf7-52b8-4a66-a4b1-85f322bb2318"} {} 204 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) /b7c88c78-6245-4fd6-9b70-ece4a4792ee3 {} {"id":"b7c88c78-6245-4fd6-9b70-ece4a4792ee3"} {} 204 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) / {} {} {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 201 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) /d4368fea-4bd4-46b7-9b28-4c522197f293/tasks {} {"boardId":"d4368fea-4bd4-46b7-9b28-4c522197f293"} {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"00bda3ec-36db-494a-beb6-353f6fda4f67","boardId":"d4368fea-4bd4-46b7-9b28-4c522197f293"} 201 
+Fri Jun 25 2021 21:47:38 GMT+0300 (Москва, стандартное время) /d4368fea-4bd4-46b7-9b28-4c522197f293/tasks {} {"boardId":"d4368fea-4bd4-46b7-9b28-4c522197f293"} {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"00bda3ec-36db-494a-beb6-353f6fda4f67","boardId":"d4368fea-4bd4-46b7-9b28-4c522197f293"} 201 
+Fri Jun 25 2021 21:47:39 GMT+0300 (Москва, стандартное время) /00bda3ec-36db-494a-beb6-353f6fda4f67 {} {"id":"00bda3ec-36db-494a-beb6-353f6fda4f67"} {} 204 
+Fri Jun 25 2021 21:47:39 GMT+0300 (Москва, стандартное время) /d4368fea-4bd4-46b7-9b28-4c522197f293/tasks/144f5c93-c0c7-470e-b530-d047affb3efc {} {"boardId":"d4368fea-4bd4-46b7-9b28-4c522197f293","taskId":"144f5c93-c0c7-470e-b530-d047affb3efc"} {} 200 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) /login {} {} {"login":"admin","password":"admin"} 500 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) /users/123 {} {} {} 500 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) /1f8396df-d823-4798-a3c8-cb38cd036789 {} {"id":"1f8396df-d823-4798-a3c8-cb38cd036789"} {} 200 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) /users/12345 {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) /1f8396df-d823-4798-a3c8-cb38cd036789 {} {"id":"1f8396df-d823-4798-a3c8-cb38cd036789"} {} 204 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) /12345 {} {"id":"12345"} {} 204 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) /c3787c1e-a3de-4825-9f1f-defe66316082 {} {"id":"c3787c1e-a3de-4825-9f1f-defe66316082"} {} 204 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) /b090c0b3-86b0-46c8-91c8-1b2cf0b406ec {} {"id":"b090c0b3-86b0-46c8-91c8-1b2cf0b406ec"} {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"b090c0b3-86b0-46c8-91c8-1b2cf0b406ec"} 200 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) /b090c0b3-86b0-46c8-91c8-1b2cf0b406ec {} {"id":"b090c0b3-86b0-46c8-91c8-1b2cf0b406ec"} {} 200 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) /b090c0b3-86b0-46c8-91c8-1b2cf0b406ec {} {"id":"b090c0b3-86b0-46c8-91c8-1b2cf0b406ec"} {} 204 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) /172c5973-bdca-4349-8d08-3435c8281459 {} {"id":"172c5973-bdca-4349-8d08-3435c8281459"} {} 204 
+Fri Jun 25 2021 21:50:07 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:50:08 GMT+0300 (Москва, стандартное время) /boards {} {} {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 500 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) /login {} undefined {"login":"admin","password":"admin"} 500 
+Fri Jun 25 2021 21:51:43 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) / {} {} {} 200 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 500 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) /7bc44977-c98d-4a26-92dc-9dfe8977efe2 {} {"id":"7bc44977-c98d-4a26-92dc-9dfe8977efe2"} {} 200 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) /7bc44977-c98d-4a26-92dc-9dfe8977efe2 {} {"id":"7bc44977-c98d-4a26-92dc-9dfe8977efe2"} {} 204 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) /12345 {} {"id":"12345"} {} 204 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) /c416bda5-5484-46e8-b515-719f2b9ae2a6 {} {"id":"c416bda5-5484-46e8-b515-719f2b9ae2a6"} {} 204 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) /111a1097-9b58-4c05-bcee-32be22be7215 {} {"id":"111a1097-9b58-4c05-bcee-32be22be7215"} {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"111a1097-9b58-4c05-bcee-32be22be7215"} 200 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) /111a1097-9b58-4c05-bcee-32be22be7215 {} {"id":"111a1097-9b58-4c05-bcee-32be22be7215"} {} 200 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) /111a1097-9b58-4c05-bcee-32be22be7215 {} {"id":"111a1097-9b58-4c05-bcee-32be22be7215"} {} 204 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) /7b92359f-5fbf-49ef-b1c8-40978fe3ddfd {} {"id":"7b92359f-5fbf-49ef-b1c8-40978fe3ddfd"} {} 204 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) / {} {} {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 201 
+Fri Jun 25 2021 21:51:44 GMT+0300 (Москва, стандартное время) /boards {} undefined {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 500 
+Fri Jun 25 2021 21:53:02 GMT+0300 (Москва, стандартное время) /users {} undefined {} 500 
+Fri Jun 25 2021 21:53:02 GMT+0300 (Москва, стандартное время) /login {} undefined {"login":"admin","password":"admin"} 500 
+Fri Jun 25 2021 21:53:02 GMT+0300 (Москва, стандартное время) /users {} undefined {} 500 
+Fri Jun 25 2021 21:53:02 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 500 
+Fri Jun 25 2021 21:53:02 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:53:02 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:53:02 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 500 
+Fri Jun 25 2021 21:53:02 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:53:02 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:53:02 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:53:02 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:53:02 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:53:02 GMT+0300 (Москва, стандартное время) /users/undefined {} undefined {} 500 
+Fri Jun 25 2021 21:53:02 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:54:52 GMT+0300 (Москва, стандартное время) /users {} undefined {} 500 
+Fri Jun 25 2021 21:54:52 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 500 
+Fri Jun 25 2021 21:54:52 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:54:52 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 21:54:52 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 500 
+Fri Jun 25 2021 22:09:02 GMT+0300 (Москва, стандартное время) /users {} undefined {} 500 
+Fri Jun 25 2021 22:09:03 GMT+0300 (Москва, стандартное время) /users/123 {} undefined {} 500 
+Fri Jun 25 2021 22:09:03 GMT+0300 (Москва, стандартное время) /users {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 22:09:03 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"} 500 
+Fri Jun 25 2021 22:09:03 GMT+0300 (Москва, стандартное время) /users/12345 {} undefined {} 500 
