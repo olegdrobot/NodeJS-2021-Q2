@@ -22,7 +22,6 @@ router.route('/:boardId/tasks').post(async (req: Request, res: Response, next: N
     boardId: String(req.params['boardId']),
     columnId: req.body.columnId
   };
-  console.log('hello ', data);
   const task = await tasksService.create(data);
   if(task) {
     //res.status(201).send(Task.toResponse(task));

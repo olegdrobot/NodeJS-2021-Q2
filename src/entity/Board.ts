@@ -43,12 +43,6 @@ export class Board implements IBoard {
 	@Column()
 	title: string;
 
-	/*@Column({type: Object, 
-            array: false,
-            default: () => "'[]'",
-            nullable: false,
-         }) */
-	//columns: Array<[title: string, order: number]>;
   @Column({type: 'json', nullable: true})
     columns: MyColumn[]
 }

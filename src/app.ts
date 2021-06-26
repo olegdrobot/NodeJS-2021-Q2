@@ -5,7 +5,7 @@ import YAML from 'yamljs';
 import userRouter from './resources/users/user.router';
 import boardRouter from './resources/boards/board.router';
 import taskRouter from './resources/tasks/task.router';
-//import {logService} from './common/errorHandle'; 
+//import {logService, errorCatcher} from './common/errorHandle'; 
 import loginRouter from './login/login.router'
 import {checkToken} from './login/login.service'
 

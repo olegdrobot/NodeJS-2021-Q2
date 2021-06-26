@@ -29,7 +29,6 @@ const getAll = async (boardId: string) => {
 const create = async (data: Partial<Task>) => {
   //await createConnection();
   const taskRepository = getRepository(Task);
-  console.log('taskRepository ', taskRepository);
   const newTask = taskRepository.create(data);
   await taskRepository.save(newTask);
   return newTask;

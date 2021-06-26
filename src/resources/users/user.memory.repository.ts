@@ -56,10 +56,8 @@ const create = async (data: Partial<User>) => {
 */
 
 const getByID = async (id: string) => {
-console.log('ID USER getByID ', id);
   const userRepository = getRepository(User);
   const user = await userRepository.findOne(id);
-  console.log('USER getByID ', user);
   return user;
   /*
       const user = usersDB.filter((el)=>el.id === id);

@@ -2,39 +2,29 @@ import "reflect-metadata";
 import {getRepository} from "typeorm";
 import { Request, Response, NextFunction } from 'express';
 import {User} from "../entity/User";
+import { JWT_SECRET_KEY } from '../common/config';
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 const getToken = async (login: string, password: string): Promise<string | undefined> => {
     const userRepository = getRepository(User);
     const user = await userRepository.find({where: {login: login}});
-    console.log('-!!----getToken ', user);
     const result = user.filter((item)=>{
         return bcrypt.compareSync(password, item.password);
     }); 
-    /*
-    if(result.length == 0) return false
-    else return result[0];
-   */
-    //return result[0];
     if(result.length == 0) return undefined
     else {
-        console.log('-----getTocen ELSE');
-        const token = jwt.sign({ id: result[0]?.id, login }, "secret");
+        const token = jwt.sign({ id: result[0]?.id, login }, String(JWT_SECRET_KEY));
         return token;
     } 
        
 }
 
 const checkToken = (req: Request, res:Response, next:NextFunction) => {
-   //const tokenStr = req.header('Authorization');
    if (['/doc', '/', '/login'].includes(req.path)) {
-       console.log('-!-!--checkToken NEXT-------');
        return next();
    }
-   //const tokenStr = req.headers["Authorization"];
    const tokenStr = req.headers.authorization;
-   // console.log('------- tokenStr ', tokenStr);
     if (tokenStr === undefined) {
         res.status(401);
       }
@@ -43,7 +33,7 @@ const checkToken = (req: Request, res:Response, next:NextFunction) => {
       if(type !== 'Bearer' ){
           res.status(401);
       }
-      const isVerified = jwt.verify(String(token), "secret");
+      const isVerified = jwt.verify(String(token), String(JWT_SECRET_KEY));
     if (!isVerified) {
     res.status(401).json({error:'Unauthorized'});
     }
