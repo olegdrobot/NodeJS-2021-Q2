@@ -83,7 +83,7 @@ const del = async (id: string) => {
   const updateTsks = await getConnection()
     .createQueryBuilder()
     .update(Task)
-    .set({ userId: 'null'})
+    .set({ userId: null})
     .where("userId = :id", { id: id })
     .execute();  
    console.log('delUser ', deletedUser, ' ', updateTsks);

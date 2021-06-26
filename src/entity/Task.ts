@@ -19,7 +19,7 @@ export class Task implements ITask {
       title = 'string',
       order = 0,
       description = 'string',
-      userId = 'string',
+      userId = null,
       boardId = 'string',
       columnId = 'string',
     } = {}) {
@@ -44,8 +44,8 @@ export class Task implements ITask {
 	@Column()
 	description: string;
 
-	@Column({ nullable: true })
-	userId: string;
+	@Column('varchar', { nullable: true })
+	userId: string | null = null;
 
 	@Column({ nullable: true })
 	boardId: string;

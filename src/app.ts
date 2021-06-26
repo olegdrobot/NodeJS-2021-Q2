@@ -5,7 +5,7 @@ import YAML from 'yamljs';
 import userRouter from './resources/users/user.router';
 import boardRouter from './resources/boards/board.router';
 import taskRouter from './resources/tasks/task.router';
-import {logService} from './common/errorHandle'; 
+//import {logService} from './common/errorHandle'; 
 import loginRouter from './login/login.router'
 import {checkToken} from './login/login.service'
 
@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.use('/doc', swaggerUI.serve, swaggerUI.setup(swaggerDocument));
 
-app.use(logService);
+//app.use(logService);
 
 app.use('/', (req, res, next) => {
   if (req.originalUrl === '/') {
@@ -26,10 +26,9 @@ app.use('/', (req, res, next) => {
   next();
 });
 
-app.use(loginRouter);
 app.use(checkToken);
+app.use(loginRouter);
 app.use('/users', userRouter);
-
 app.use('/boards', boardRouter);
 app.use('/boards', taskRouter);
 //app.use(errorCatcher);

@@ -8,7 +8,7 @@ import jwt from "jsonwebtoken";
 const getToken = async (login: string, password: string): Promise<string | undefined> => {
     const userRepository = getRepository(User);
     const user = await userRepository.find({where: {login: login}});
-    console.log('-----getTocen ', user);
+    console.log('-!!----getToken ', user);
     const result = user.filter((item)=>{
         return bcrypt.compareSync(password, item.password);
     }); 
@@ -27,8 +27,14 @@ const getToken = async (login: string, password: string): Promise<string | undef
 }
 
 const checkToken = (req: Request, res:Response, next:NextFunction) => {
-    const tokenStr = req.header('Authorization');
-    //console.log('------- tokenStr ', req.headers.authorization);
+   //const tokenStr = req.header('Authorization');
+   if (['/doc', '/', '/login'].includes(req.path)) {
+       console.log('-!-!--checkToken NEXT-------');
+       return next();
+   }
+   //const tokenStr = req.headers["Authorization"];
+   const tokenStr = req.headers.authorization;
+   // console.log('------- tokenStr ', tokenStr);
     if (tokenStr === undefined) {
         res.status(401);
       }
