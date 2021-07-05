@@ -15,11 +15,15 @@ export class TasksService {
   create = (data: CreateTaskDto) => taskRepo.create(data);
 
   getByID = (boardId: string, taskId: string) => taskRepo.getByID(boardId, taskId);
+
+  update = (boardId: string, taskId: string, data: UpdateTaskDto) => taskRepo.update(boardId, taskId, data);
+  
+  del = (boardId: string, taskId: string) => taskRepo.del(boardId, taskId);
   /*
   findAll() {
     return `This action returns all tasks`;
   }
-*/
+
   findOne(id: number) {
     return `This action returns a #${id} task`;
   }
@@ -31,4 +35,5 @@ export class TasksService {
   remove(id: number) {
     return `This action removes a #${id} task`;
   }
+  */
 }

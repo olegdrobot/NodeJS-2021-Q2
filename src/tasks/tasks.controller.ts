@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Put } from '@nestjs/common';
 import { TasksService } from './tasks.service';
 import { CreateTaskDto } from './dto/create-task.dto';
 import { UpdateTaskDto } from './dto/update-task.dto';
@@ -45,13 +45,21 @@ export class TasksController {
     //return this.tasksService.findOne(+id);
   }
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateTaskDto: UpdateTaskDto) {
-    return this.tasksService.update(+id, updateTaskDto);
+  @Put(':boardId/tasks/:taskId')
+  async update(@Param('boardId') boardId: string, @Body() updateTaskDto: UpdateTaskDto, @Param('taskId') taskId: string) {
+    //return this.tasksService.update(+id, updateTaskDto);
+    const task = this.tasksService.update(boardId, taskId, updateTaskDto);
+    if(task){
+      //res.status(200).send(Task.toResponse(task));
+      return task;
+    } else {
+      return "Task wasn't updated";  
+    }
   }
 
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.tasksService.remove(+id);
+  @Delete(':boardId/tasks/:taskId')
+  remove(@Param('boardId') boardId: string, @Param('taskId') taskId: string) {
+    //return this.tasksService.remove(+id);
+    this.tasksService.del(boardId, taskId);
   }
 }
