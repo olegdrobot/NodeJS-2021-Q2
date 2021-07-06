@@ -1,6 +1,6 @@
 import {Entity, PrimaryColumn, Column} from "typeorm";
 import * as uuid from 'uuid';
-//import {MyColumn} from './MyColumn'
+import {CreateMyColumnDto} from '../dto/create-mycolumn.dto ';
 
 @Entity() 
 export class Board {
@@ -27,7 +27,7 @@ export class Board {
       } = {}) {
         this.id = id;
         this.title = title;
-        //this.columns = columns;
+        this.columns = columns;
       }
         
     @PrimaryColumn()
@@ -35,8 +35,8 @@ export class Board {
     
     @Column()
         title: string;
-    /*
+    
     @Column({type: 'json', nullable: true})
-        columns: MyColumn[]
-    */  
+        columns: CreateMyColumnDto[]
+      
 }
