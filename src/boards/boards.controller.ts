@@ -1,7 +1,8 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Put } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Put, Res } from '@nestjs/common';
 import { BoardsService } from './boards.service';
 import { CreateBoardDto } from './dto/create-board.dto';
 import { UpdateBoardDto } from './dto/update-board.dto';
+import { Request, Response } from 'express';
 
 @Controller('boards')
 export class BoardsController {
@@ -30,17 +31,21 @@ export class BoardsController {
   }
 
   @Get(':id')
-  async findOne(@Param('id') id: string) {
+  async findOne(@Param('id') id: string, @Res() res: Response) {
     const board = await this.boardsService.getByID(id);
     console.log('---getBoardById ', board);
-    if (board !== undefined) {return board}
+    if (board !== undefined) {
+      res.status(200).json(board);
+      //return board
+    }
     else {
-      return "Error Board ID";
+      //return "Error Board ID";
+      res.sendStatus(404);
     }  
   }
     //return this.boardsService.findOne(+id);
   
-
+/*
   @Put(':id')
   async update(@Param('id') id: string, @Body() updateBoardDto: UpdateBoardDto) {
     const board = await this.boardsService.update(updateBoardDto);
@@ -49,6 +54,16 @@ export class BoardsController {
     } else {
       return "Board wasn't updated";
       }
+  }
+*/
+  @Put(':id')
+    async update(@Param('id') id: string, @Body() updateBoardDto: UpdateBoardDto, @Res() res: Response) {
+    const board = await this.boardsService.update(updateBoardDto);
+    if(board !== undefined ) {
+      res.status(200).json(board);
+     } else {
+      res.status(401);
+     }
   }
 
   @Delete(':id')

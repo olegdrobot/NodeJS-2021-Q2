@@ -1,7 +1,8 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Put } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Put, Res } from '@nestjs/common';
 import { TasksService } from './tasks.service';
 import { CreateTaskDto } from './dto/create-task.dto';
 import { UpdateTaskDto } from './dto/update-task.dto';
+import { Request, Response } from 'express';
 
 @Controller('boards')
 export class TasksController {
@@ -36,11 +37,15 @@ export class TasksController {
   }
 
   @Get(':boardId/tasks/:taskId')
-  async findOne(@Param('boardId') boardId: string, @Param('taskId') taskId: string) {
+  async findOne(@Param('boardId') boardId: string, @Param('taskId') taskId: string, @Res() res: Response) {
     const task = await this.tasksService.getByID(boardId, taskId);
-    if (task) return task;
+    if (task) {
+      res.status(200).json(task);
+      //return task;
+    }
     else {
-      return "Error Task ID";
+      res.sendStatus(404);
+      //return "Error Task ID";
   }
     //return this.tasksService.findOne(+id);
   }

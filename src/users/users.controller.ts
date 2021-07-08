@@ -2,16 +2,19 @@ import { Controller, Get, Post, Body, Patch, Param, Delete, Put, Res } from '@ne
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
+import { Request, Response } from 'express';
+import { User } from './entities/user.entity';
 
 @Controller('users')
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 
   @Post()
-  async create(@Body() createUserDto: CreateUserDto) {
-    console.log('---User CREATE Controller ', createUserDto);
-    const user = this.usersService.create(createUserDto); 
-    return user;
+  async create(@Body() createUserDto: CreateUserDto, @Res() res: Response) {
+    //console.log('---User CREATE Controller ', createUserDto);
+    const user = await this.usersService.create(createUserDto); 
+    res.status(201).send(User.toResponse(user));
+    //return user;
     //return this.usersService.create(createUserDto);
   }
 
@@ -23,9 +26,10 @@ export class UsersController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    const user = this.usersService.getByID(id);
-    return user;
+  async findOne(@Param('id') id: string, @Res() res: Response) {
+    const user = await this.usersService.getByID(id);
+    res.status(200).send(User.toResponse(user));
+    //return user;
     //return this.usersService.findOne(+id);
   }
 

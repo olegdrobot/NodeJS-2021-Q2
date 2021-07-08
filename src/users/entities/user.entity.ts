@@ -1,5 +1,6 @@
 import * as uuid from 'uuid';
 import {Entity, PrimaryColumn, Column} from "typeorm";
+import { CreateUserDto } from '../dto/create-user.dto';
 
 /*
 interface IUser {
@@ -34,10 +35,11 @@ export class User {
   
       @Column({ nullable: true })
       password: string;
-  /*
-      static toResponse(user: Partial<IUser>) {
+  
+      static toResponse(user: User) {
         const { id, name, login } = user;
         return { id, name, login };
       }
-*/
+
+      
 }
