@@ -1,25 +1,41 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Put, Res } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+  Put,
+  Res,
+  UseGuards
+} from '@nestjs/common';
 import { TasksService } from './tasks.service';
 import { CreateTaskDto } from './dto/create-task.dto';
 import { UpdateTaskDto } from './dto/update-task.dto';
 import { Request, Response } from 'express';
+import { AuthGuard } from 'src/auth/auth.guard';
 
 @Controller('boards')
+@UseGuards(AuthGuard)
 export class TasksController {
   constructor(private readonly tasksService: TasksService) {}
 
   @Post(':boardId/tasks')
-  async create(@Param('boardId') boardId: string, @Body() createTaskDto: CreateTaskDto) {
+  async create(
+    @Param('boardId') boardId: string,
+    @Body() createTaskDto: CreateTaskDto,
+  ) {
     const data: CreateTaskDto = {
       title: createTaskDto.title,
       order: createTaskDto.order,
       description: createTaskDto.description,
       userId: createTaskDto.userId,
       boardId: boardId,
-      columnId: createTaskDto.columnId
+      columnId: createTaskDto.columnId,
     };
     const task = this.tasksService.create(data);
-    if(task) {
+    if (task) {
       //res.status(201).send(Task.toResponse(task));
       //res.status(201).json(task);
       return task;
@@ -37,28 +53,35 @@ export class TasksController {
   }
 
   @Get(':boardId/tasks/:taskId')
-  async findOne(@Param('boardId') boardId: string, @Param('taskId') taskId: string, @Res() res: Response) {
+  async findOne(
+    @Param('boardId') boardId: string,
+    @Param('taskId') taskId: string,
+    @Res() res: Response,
+  ) {
     const task = await this.tasksService.getByID(boardId, taskId);
     if (task) {
       res.status(200).json(task);
       //return task;
-    }
-    else {
+    } else {
       res.sendStatus(404);
       //return "Error Task ID";
-  }
+    }
     //return this.tasksService.findOne(+id);
   }
 
   @Put(':boardId/tasks/:taskId')
-  async update(@Param('boardId') boardId: string, @Body() updateTaskDto: UpdateTaskDto, @Param('taskId') taskId: string) {
+  async update(
+    @Param('boardId') boardId: string,
+    @Body() updateTaskDto: UpdateTaskDto,
+    @Param('taskId') taskId: string,
+  ) {
     //return this.tasksService.update(+id, updateTaskDto);
     const task = this.tasksService.update(boardId, taskId, updateTaskDto);
-    if(task){
+    if (task) {
       //res.status(200).send(Task.toResponse(task));
       return task;
     } else {
-      return "Task wasn't updated";  
+      return "Task wasn't updated";
     }
   }
 

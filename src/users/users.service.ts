@@ -18,10 +18,11 @@ export class UsersService {
   getAll = () => usersRepo.getAll();
 
   create = (data: CreateUserDto) => usersRepo.create(data);
-  
+
   getByID = (id: string) => usersRepo.getByID(id);
 
-  update = (id: string, updateUserDto: UpdateUserDto) => usersRepo.update(id, updateUserDto);
+  update = (id: string, updateUserDto: UpdateUserDto) =>
+    usersRepo.update(id, updateUserDto);
 
   del = (id: string) => usersRepo.del(id);
   /*

@@ -1,10 +1,23 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Put, Res } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+  Put,
+  Res,
+  UseGuards
+} from '@nestjs/common';
 import { BoardsService } from './boards.service';
 import { CreateBoardDto } from './dto/create-board.dto';
 import { UpdateBoardDto } from './dto/update-board.dto';
 import { Request, Response } from 'express';
+import { AuthGuard } from 'src/auth/auth.guard';
 
 @Controller('boards')
+@UseGuards(AuthGuard)
 export class BoardsController {
   constructor(private readonly boardsService: BoardsService) {}
 
@@ -13,10 +26,10 @@ export class BoardsController {
     //console.log('---Create Board ', createBoardDto);
     const board = this.boardsService.create(createBoardDto);
     //console.log('!!!--createdBoard ', board);
-    if(board){
+    if (board) {
       return board;
     } else {
-      return "Board wasn't created";  
+      return "Board wasn't created";
     }
     //return this.boardsService.create(createBoardDto);
   }
@@ -27,7 +40,6 @@ export class BoardsController {
     //console.log('---GetAll ', boards);
     return boards;
     //return this.boardsService.findAll();
-  
   }
 
   @Get(':id')
@@ -37,15 +49,14 @@ export class BoardsController {
     if (board !== undefined) {
       res.status(200).json(board);
       //return board
-    }
-    else {
+    } else {
       //return "Error Board ID";
       res.sendStatus(404);
-    }  
+    }
   }
-    //return this.boardsService.findOne(+id);
-  
-/*
+  //return this.boardsService.findOne(+id);
+
+  /*
   @Put(':id')
   async update(@Param('id') id: string, @Body() updateBoardDto: UpdateBoardDto) {
     const board = await this.boardsService.update(updateBoardDto);
@@ -57,13 +68,17 @@ export class BoardsController {
   }
 */
   @Put(':id')
-    async update(@Param('id') id: string, @Body() updateBoardDto: UpdateBoardDto, @Res() res: Response) {
+  async update(
+    @Param('id') id: string,
+    @Body() updateBoardDto: UpdateBoardDto,
+    @Res() res: Response,
+  ) {
     const board = await this.boardsService.update(updateBoardDto);
-    if(board !== undefined ) {
+    if (board !== undefined) {
       res.status(200).json(board);
-     } else {
+    } else {
       res.status(401);
-     }
+    }
   }
 
   @Delete(':id')

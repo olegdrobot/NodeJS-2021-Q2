@@ -10,8 +10,8 @@ export class BoardsService {
     return 'This action adds a new board';
   }
   */
-  create = (data:CreateBoardDto) => boardRepo.create(data);
-  
+  create = (data: CreateBoardDto) => boardRepo.create(data);
+
   getAll = () => boardRepo.getAll();
 
   getByID = (id: string) => boardRepo.getByID(id);
@@ -36,5 +36,5 @@ export class BoardsService {
   remove(id: number) {
     return `This action removes a #${id} board`;
   }
-*/  
+*/
 }
