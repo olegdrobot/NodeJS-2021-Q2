@@ -13,15 +13,15 @@ export class AuthGuard implements CanActivate {
         return true;
     }
     const tokenStr = request.headers.authorization;
-    console.log('---tokenStr ', tokenStr);
+    console.log('---tokenStr ', request.headers);
     if (tokenStr === undefined) {
         //res.status(401);
         //return false;
         throw new UnauthorizedException();
       }
       const [type, token] = String(tokenStr).split(' ');
-      console.log('type ', type);
-      console.log('token ', token);
+     // console.log('type ', type);
+     // console.log('token ', token);
       if(type !== 'Bearer' ){
           //res.status(401);
           //return false;

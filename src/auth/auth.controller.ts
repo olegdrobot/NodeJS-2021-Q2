@@ -14,7 +14,20 @@ export class AuthController {
     console.log('----TOKEN ', token);
     if(!token) {
       res.status(401).json({error:'Unauthorized'});}
-    else {res.status(200).json({token});}
+    else {
+      res.send({token: token});
+      /*
+      return {
+        200: {
+          type: 'object',
+          properties: {
+            token: { type: 'string' }
+          }
+        }
+      };
+      */
+      //res.status(200).json({token});
+    }
     //return token;
     //return this.authService.getToken(createAuthDto.login, createAuthDto.password);
   }

@@ -32,10 +32,11 @@ export class UsersController {
   }
 
   @Get()
-  async getAll() {
+  async getAll(@Res() res: Response) {
     const users = this.usersService.getAll();
     //console.log('---User Controller ', users);
-    return users;
+    res.send((await users).map((item)=>{User.toResponse(item)}));
+    //return users; - работает для экспресс
   }
 
   @Get(':id')
@@ -47,16 +48,18 @@ export class UsersController {
   }
 
   @Put(':id')
-  update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
-    const user = this.usersService.update(id, updateUserDto);
-    return user;
+  async update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto, @Res() res: Response) {
+    const user = await this.usersService.update(id, updateUserDto);
+    res.send(User.toResponse(user));
+    // return user; - работает для экспресс
     //return this.usersService.update(+id, updateUserDto);
   }
 
   @Delete(':id')
-  remove(@Param('id') id: string) {
+  remove(@Param('id') id: string, @Res() res: Response) {
     this.usersService.del(id);
     // return this.usersService.remove(+id);
-    return 'User deleted';
+    res.send('User deleted');
+    //return 'User deleted';- работает для экспресс
   }
 }

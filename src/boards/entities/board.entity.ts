@@ -38,4 +38,9 @@ export class Board {
 
   @Column({ type: 'json', nullable: true })
   columns: CreateMyColumnDto[];
+
+  static toResponse(board: Board) {
+    const { id, title, columns } = board;
+    return { id, title, columns };
+  }
 }
