@@ -5,6 +5,7 @@ import {
 } from '@nestjs/platform-fastify';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import { create } from './users/user.memory.repository';
 
 async function bootstrap() {
   let app: INestApplication;
@@ -21,5 +22,12 @@ async function bootstrap() {
 
   //const app = await NestFactory.create(AppModule);
   await app.listen(4000);
+
+  const admin = await create({
+    name: 'admin',
+    login: 'admin',
+    password: 'admin'
+  });
+  console.log('-----Create ADMIN--- ', admin);
 }
 bootstrap();
