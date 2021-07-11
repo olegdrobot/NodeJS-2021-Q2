@@ -1,0 +1,16 @@
+**/.dockerignore
+.dockerignore
+**/.github
+.github
+**/.gitignore
+.gitignore
+**/*.txt
+*.txt
+**/.doc
+.doc
+**/docker-compose*
+**/compose*
+**/Dockerfile*
+**/node_modules
+.node_modules
+README.md
