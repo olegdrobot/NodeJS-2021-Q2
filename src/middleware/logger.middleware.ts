@@ -6,7 +6,6 @@ import * as fs from 'fs';
 @Injectable()
 export class LoggerMiddleware implements NestMiddleware {
   use(req: Request, res: Response, next: NextFunction) {
-    //console.log('Request...');
     const date = new Date();
     finished(res, () => {
       const msg = `${date} ${req.path} ${JSON.stringify(

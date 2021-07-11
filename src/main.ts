@@ -28,6 +28,6 @@ async function bootstrap() {
     login: 'admin',
     password: 'admin'
   });
-  console.log('-----Create ADMIN--- ', admin);
+  //console.log('-----Create ADMIN--- ', admin);
 }
 bootstrap();

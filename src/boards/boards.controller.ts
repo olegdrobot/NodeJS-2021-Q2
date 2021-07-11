@@ -23,26 +23,18 @@ export class BoardsController {
 
   @Post()
   async create(@Body() createBoardDto: CreateBoardDto, @Res() res: Response) {
-    //console.log('---Create Board ', createBoardDto);
     const board = await this.boardsService.create(createBoardDto);
-    //console.log('!!!--createdBoard ', board);
     if (board) {
       res.send(Board.toResponse(board));
-      //return board; - работает для экспресс
     } else {
       res.status(404).send('Not created');
-      //return "Board wasn't created"; - раюотает для экспресс
     }
-    //return this.boardsService.create(createBoardDto);
   }
 
   @Get()
   async findAll(@Res() res: Response) {
     const boards = await this.boardsService.getAll();
-    //console.log('---GetAll ', boards);
     res.send(boards.map(Board.toResponse));
-    //return boards; - работает для экспресс
-    //return this.boardsService.findAll();
   }
 
   @Get(':id')
@@ -51,27 +43,11 @@ export class BoardsController {
     console.log('---getBoardById ', board);
     if (board !== undefined) {
       res.send(Board.toResponse(board));
-      //res.status(200).json(board); - работает для экспресс
-      //return board
     } else {
       res.status(404).send('Not Found');
-      //return "Error Board ID";
-      //res.sendStatus(404); - работает для экспресс
     }
   }
-  //return this.boardsService.findOne(+id);
 
-  /*
-  @Put(':id')
-  async update(@Param('id') id: string, @Body() updateBoardDto: UpdateBoardDto) {
-    const board = await this.boardsService.update(updateBoardDto);
-    if(board !== undefined ) {
-      return board;
-    } else {
-      return "Board wasn't updated";
-      }
-  }
-*/
   @Put(':id')
   async update(
     @Param('id') id: string,
@@ -80,7 +56,6 @@ export class BoardsController {
   ) {
     const board = await this.boardsService.update(updateBoardDto);
     if (board !== undefined) {
-      //res.status(200).json(board); - работает для экспресс
       res.send(Board.toResponse(board));
     } else {
       res.status(401);
@@ -92,7 +67,5 @@ export class BoardsController {
     const boardID = await this.boardsService.del(id);
     console.log('--DELETE ', boardID);
     res.send(boardID);
-    //return boardID; - работает для экспресс
-    //return this.boardsService.remove(+id);
   }
 }

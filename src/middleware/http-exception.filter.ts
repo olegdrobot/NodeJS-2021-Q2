@@ -5,7 +5,6 @@ import {
   HttpException,
 } from '@nestjs/common';
 import { Request, Response } from 'express';
-//import { finished } from 'stream';
 import * as fs from 'fs';
 
 @Catch(HttpException)

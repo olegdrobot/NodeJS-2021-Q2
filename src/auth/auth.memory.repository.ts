@@ -2,7 +2,6 @@ import 'reflect-metadata';
 import { getRepository } from 'typeorm';
 import { Request, Response, NextFunction } from 'express';
 import { User } from '../users/entities/user.entity';
-//import { JWT_SECRET_KEY } from '../common/config';
 import * as bcrypt from 'bcrypt';
 import * as jwt from 'jsonwebtoken';
 
@@ -12,13 +11,8 @@ const getToken = async (
 ): Promise<string | undefined> => {
   const userRepository = getRepository(User);
   const user = await userRepository.find({ where: { login: login } });
-  //console.log('--Auth--User ', user);
   const result = user.filter(async (item) => {
-    //console.log('--auth--password ', password);
-    //const compare = bcrypt.compareSync(password, item.password);
-    //console.log('--auth--compare ', compare);
     return await bcrypt.compare(password, item.password);
-    //return bcrypt.compareSync(password, item.password);
   });
   if (result.length == 0) return undefined;
   else {
@@ -39,7 +33,6 @@ const checkToken = (req: Request, res: Response, next: NextFunction) => {
     res.status(401);
   }
   const [type, token] = String(tokenStr).split(' ');
-  console.log('type ', type);
   if (type !== 'Bearer') {
     res.status(401);
   }

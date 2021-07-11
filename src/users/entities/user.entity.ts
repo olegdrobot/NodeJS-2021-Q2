@@ -1,14 +1,6 @@
 import * as uuid from 'uuid';
 import { Entity, PrimaryColumn, Column } from 'typeorm';
 
-/*
-interface IUser {
-    name: string;
-    login: string;
-    password: string;
-    id?: string;
-}
-*/
 @Entity()
 export class User {
   constructor({
