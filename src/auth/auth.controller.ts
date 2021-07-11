@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Res } from '@nestjs/common';
+import { Controller, Post, Body, Res } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { CreateAuthDto } from './dto/create-auth.dto';
 //import { UpdateAuthDto } from './dto/update-auth.dto';
@@ -10,12 +10,15 @@ export class AuthController {
 
   @Post()
   async getToken(@Body() createAuthDto: CreateAuthDto, @Res() res: Response) {
-    const token = await this.authService.getToken(createAuthDto.login, createAuthDto.password);
+    const token = await this.authService.getToken(
+      createAuthDto.login,
+      createAuthDto.password,
+    );
     console.log('----TOKEN ', token);
-    if(!token) {
-      res.status(401).json({error:'Unauthorized'});}
-    else {
-      res.send({token: token});
+    if (!token) {
+      res.status(401).json({ error: 'Unauthorized' });
+    } else {
+      res.send({ token: token });
       /*
       return {
         200: {
@@ -31,5 +34,4 @@ export class AuthController {
     //return token;
     //return this.authService.getToken(createAuthDto.login, createAuthDto.password);
   }
-
 }

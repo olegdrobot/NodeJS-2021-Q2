@@ -3,17 +3,16 @@ import {
   Get,
   Post,
   Body,
-  Patch,
   Param,
   Delete,
   Put,
   Res,
-  UseGuards
+  UseGuards,
 } from '@nestjs/common';
 import { TasksService } from './tasks.service';
 import { CreateTaskDto } from './dto/create-task.dto';
 import { UpdateTaskDto } from './dto/update-task.dto';
-import { Request, Response } from 'express';
+import { Response } from 'express';
 import { AuthGuard } from 'src/auth/auth.guard';
 import { Task } from './entities/task.entity';
 
@@ -26,7 +25,7 @@ export class TasksController {
   async create(
     @Param('boardId') boardId: string,
     @Body() createTaskDto: CreateTaskDto,
-    @Res() res: Response
+    @Res() res: Response,
   ) {
     const data: CreateTaskDto = {
       title: createTaskDto.title,
@@ -49,10 +48,7 @@ export class TasksController {
   }
 
   @Get(':boardId/tasks')
-  async findAll(
-    @Param('boardId') boardId: string,
-    @Res() res: Response
-    ) {
+  async findAll(@Param('boardId') boardId: string, @Res() res: Response) {
     const boardTasks = await this.tasksService.getAll(boardId);
     //return this.tasksService.findAll();
     res.send(boardTasks.map(Task.toResponse));
@@ -83,7 +79,7 @@ export class TasksController {
     @Param('boardId') boardId: string,
     @Body() updateTaskDto: UpdateTaskDto,
     @Param('taskId') taskId: string,
-    @Res() res: Response
+    @Res() res: Response,
   ) {
     //return this.tasksService.update(+id, updateTaskDto);
     const task = await this.tasksService.update(boardId, taskId, updateTaskDto);
@@ -98,10 +94,10 @@ export class TasksController {
 
   @Delete(':boardId/tasks/:taskId')
   remove(
-    @Param('boardId') boardId: string, 
+    @Param('boardId') boardId: string,
     @Param('taskId') taskId: string,
-    @Res() res: Response
-    ) {
+    @Res() res: Response,
+  ) {
     //return this.tasksService.remove(+id);
     this.tasksService.del(boardId, taskId);
     res.send(200);

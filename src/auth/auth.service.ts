@@ -1,14 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import * as loginRepo from './auth.memory.repository';
-import { CreateAuthDto } from './dto/create-auth.dto';
-import { UpdateAuthDto } from './dto/update-auth.dto';
 
 @Injectable()
 export class AuthService {
+  getToken = (login: string, password: string) =>
+    loginRepo.getToken(login, password);
 
-  getToken = (login: string, password: string) => loginRepo.getToken(login, password);
-
-  
   /*
   create(createAuthDto: CreateAuthDto) {
     return 'This action adds a new auth';
@@ -29,5 +26,5 @@ export class AuthService {
   remove(id: number) {
     return `This action removes a #${id} auth`;
   }
- */ 
+ */
 }

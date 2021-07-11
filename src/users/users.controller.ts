@@ -3,17 +3,16 @@ import {
   Get,
   Post,
   Body,
-  Patch,
   Param,
   Delete,
   Put,
   Res,
-  UseGuards
+  UseGuards,
 } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
-import { Request, Response } from 'express';
+import { Response } from 'express';
 import { User } from './entities/user.entity';
 import { AuthGuard } from 'src/auth/auth.guard';
 
@@ -35,7 +34,11 @@ export class UsersController {
   async getAll(@Res() res: Response) {
     const users = this.usersService.getAll();
     //console.log('---User Controller ', users);
-    res.send((await users).map((item)=>{User.toResponse(item)}));
+    res.send(
+      (await users).map((item) => {
+        User.toResponse(item);
+      }),
+    );
     //return users; - работает для экспресс
   }
 
@@ -48,7 +51,11 @@ export class UsersController {
   }
 
   @Put(':id')
-  async update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto, @Res() res: Response) {
+  async update(
+    @Param('id') id: string,
+    @Body() updateUserDto: UpdateUserDto,
+    @Res() res: Response,
+  ) {
     const user = await this.usersService.update(id, updateUserDto);
     res.send(User.toResponse(user));
     // return user; - работает для экспресс

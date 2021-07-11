@@ -1,4 +1,9 @@
-import { ExceptionFilter, Catch, ArgumentsHost, HttpException } from '@nestjs/common';
+import {
+  ExceptionFilter,
+  Catch,
+  ArgumentsHost,
+  HttpException,
+} from '@nestjs/common';
 import { Request, Response } from 'express';
 //import { finished } from 'stream';
 import * as fs from 'fs';
@@ -12,20 +17,18 @@ export class HttpExceptionFilter implements ExceptionFilter {
     const status = exception.getStatus();
 
     const date = new Date();
-	const msg = `${date} Error status: ${status} path: ${request.url} \n`;
+    const msg = `${date} Error status: ${status} path: ${request.url} \n`;
 
-	fs.appendFile("logErrors.txt", msg, (error) => {
-      	if (error) {
-      	  throw error;
-     	}
-      });
+    fs.appendFile('logErrors.txt', msg, (error) => {
+      if (error) {
+        throw error;
+      }
+    });
 
-    response
-      .status(status)
-      .json({
-        statusCode: status,
-        timestamp: date,
-        path: request.url,
-      });
+    response.status(status).json({
+      statusCode: status,
+      timestamp: date,
+      path: request.url,
+    });
   }
 }

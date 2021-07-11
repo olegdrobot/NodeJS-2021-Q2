@@ -1,6 +1,5 @@
 import * as uuid from 'uuid';
 import { Entity, PrimaryColumn, Column } from 'typeorm';
-import { CreateUserDto } from '../dto/create-user.dto';
 
 /*
 interface IUser {
